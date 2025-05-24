@@ -1,8 +1,13 @@
 {
-    "Nickname": "Armor Stat Synthesis Patcher",
-    "Visibility": "Visible",
-    "OneLineDescription": "A customizable patcher that analyzes and adjusts armor stats for better balance between mods",
-    "LongDescription": "This patcher normalizes armor stats from multiple mods. It handles armor rates and weight values. Check out the Nexus page for more details: https://www.nexusmods.com/skyrimspecialedition/mods/149027",
-    "PreferredAutoVersioning": "Default",
-    "RequiredMods": []
+  "Nickname": "Armor Stat Synthesis Patcher",
+  "Visibility": "Visible",
+  "OneLineDescription": "A customizable patcher that analyzes and adjusts armor stats for better balance between mods",
+  "LongDescription": "This patcher normalizes armor stats from multiple mods. It handles armor rates and weight values. Check out the Nexus page for more details: https://www.nexusmods.com/skyrimspecialedition/mods/150920",
+  "PreferredAutoVersioning": "Default",
+  "RequiredMods": [
+    "Skyrim.esm"
+  ],
+  "TargetedReleases": [
+    "SkyrimSE"
+  ]
 }
