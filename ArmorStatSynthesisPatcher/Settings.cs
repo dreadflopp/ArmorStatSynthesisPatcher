@@ -208,7 +208,7 @@ namespace ArmourStatsSynthesisPatcher
             shroudedArmor.Armor["Armor"] = new ArmorPiece { Identifiers = "ArmorCuirass", Rating = 29f, Weight = 7.0f };
             shroudedArmor.Armor["Boots"] = new ArmorPiece { Identifiers = "ArmorBoots", Rating = 8f, Weight = 2.0f };
             shroudedArmor.Armor["Gauntlets"] = new ArmorPiece { Identifiers = "ArmorGauntlets", Rating = 8f, Weight = 2.0f };
-            shroudedArmor.Armor["Armor"] = new ArmorPiece { Identifiers = "Armor and Gloves", Rating = 37f, Weight = 9.0f };
+            shroudedArmor.Armor["Armor and Gloves"] = new ArmorPiece { Identifiers = "Armor and Gloves", Rating = 37f, Weight = 9.0f };
             shroudedArmor.Armor["Helmet"] = new ArmorPiece { Identifiers = "ArmorHelmet", Rating = 13f, Weight = 2.0f };
             VanillaLightArmors.Armor["Shrouded"] = shroudedArmor;
 
@@ -1206,6 +1206,18 @@ namespace ArmourStatsSynthesisPatcher
         [SettingName("Modify Weights")]
         [Tooltip("Modify armor weights")]
         public bool ModifyWeights { get; set; } = true;
+
+        [SettingName("Remove rating for armor pieces without armor keywords")]
+        [Tooltip("Remove rating from parsed armor pieces that do not have any armor keywords")]
+        public bool RemoveRatingForUnknownArmorPieces { get; set; } = false;
+
+        [SettingName("Remove weight for armor pieces without armor keywords")]
+        [Tooltip("Remove weight from parsed armor pieces that do not have any armor keywords")]
+        public bool RemoveWeightForUnknownArmorPieces { get; set; } = false;
+
+        [SettingName("Armor piece keywords")]
+        [Tooltip("Armor piece keywords to use when removing rating/weight (semicolon separated)")]
+        public string ArmorPieceKeywords { get; set; } = "ArmorCuirass;ArmorBoots;ArmorGauntlets;ArmorHelmet;ArmorShield";
 
         [JsonProperty]
         public ArmorCategory VanillaLightArmors { get; set; }

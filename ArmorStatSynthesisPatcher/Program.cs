@@ -168,7 +168,7 @@ namespace ArmourStatsSynthesisPatcher
                 return (false, default);
             }
 
-            public (bool Matched, ArmorType? Type, ArmorPiece? Piece) TryMatch(IArmorGetter armor, ILinkCache linkCache, IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
+            public (bool TypeMatched, bool PieceMatched, ArmorType? Type, ArmorPiece? Piece) TryMatch(IArmorGetter armor, ILinkCache linkCache, IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
             {
                 DebugLog($"------------------------------------------");
                 DebugLog($"Trying to match armor: {armor.EditorID}");
@@ -185,7 +185,7 @@ namespace ArmourStatsSynthesisPatcher
                 if (patterns == null)
                 {
                     DebugLog("Unknown armor type, cannot match");
-                    return (false, null, null);
+                    return (false, false, null, null);
                 }
 
                 // Try to match the armor type
@@ -193,7 +193,7 @@ namespace ArmourStatsSynthesisPatcher
                 if (!matched || armorType == null)
                 {
                     DebugLog("No match found for armor");
-                    return (false, null, null);
+                    return (false, false, null, null);
                 }
 
                 // Now try to match the specific piece
@@ -217,7 +217,7 @@ namespace ArmourStatsSynthesisPatcher
                 if (pieces.Count == 1 && pieces[0].Identifier.Equals(armorType.Identifiers, StringComparison.OrdinalIgnoreCase))
                 {
                     DebugLog($"Found direct match with armor type identifier: {armorType.Identifiers}");
-                    return (true, armorType, pieces[0].Result);
+                    return (true, true, armorType, pieces[0].Result);
                 }
 
                 var (pieceMatched, matchedPiece) = TryMatchIdentifiers(armor, pieces, linkCache);
@@ -225,12 +225,36 @@ namespace ArmourStatsSynthesisPatcher
                 {
                     DebugLog($"Matching succeeded with rating: {matchedPiece.Rating}");
                     DebugLog($"Matched piece weight: {matchedPiece.Weight}");
-                    return (true, armorType, matchedPiece);
+                    return (true, true, armorType, matchedPiece);
                 }
 
-                DebugLog("No match found for armor");
-                return (false, null, null);
+                DebugLog("No piece match found, but armor type matched");
+                return (true, false, armorType, null);
             }
+        }
+
+        private static bool HasArmorPieceKeywords(IArmorGetter armor, ILinkCache linkCache)
+        {
+            if (armor.Keywords == null) return false;
+
+            // Get armor piece keywords from settings
+            var armorPieceKeywords = Settings.Value.ArmorPieceKeywords
+                .Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+            foreach (var keyword in armor.Keywords)
+            {
+                if (keyword.TryResolve(linkCache, out var keywordRecord))
+                {
+                    var keywordName = keywordRecord.EditorID ?? "";
+                    if (armorPieceKeywords.Contains(keywordName))
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
         }
 
         private static void CheckSettingsIntegrity(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
@@ -366,6 +390,10 @@ namespace ArmourStatsSynthesisPatcher
             DebugLog("Settings:");
             DebugLog($"  - PluginFilter: {Settings.Value.PluginFilter}");
             DebugLog($"  - DebugMode: {Settings.Value.DebugMode}");
+            DebugLog($"  - ModifyRatings: {Settings.Value.ModifyRatings}");
+            DebugLog($"  - ModifyWeights: {Settings.Value.ModifyWeights}");
+            DebugLog($"  - RemoveRatingForUnknownArmorPieces: {Settings.Value.RemoveRatingForUnknownArmorPieces}");
+            DebugLog($"  - RemoveWeightForUnknownArmorPieces: {Settings.Value.RemoveWeightForUnknownArmorPieces}");
 
             // Get the list of plugins to include
             var pluginIncludeList = Settings.Value.PluginIncludeList
@@ -495,8 +523,8 @@ namespace ArmourStatsSynthesisPatcher
                 }
 
                 // Try to match the armor
-                var (matched, armorType, armorPiece) = matcher.TryMatch(winningArmor, state.LinkCache, state);
-                if (matched && armorPiece != null && armorType != null)
+                var (typeMatched, pieceMatched, armorType, armorPiece) = matcher.TryMatch(winningArmor, state.LinkCache, state);
+                if (typeMatched && armorType != null)
                 {
                     // If the armor set to be passed, skip modifications
                     if (armorType.MatchBehavior == ArmorMatchBehavior.Pass)
@@ -505,15 +533,57 @@ namespace ArmourStatsSynthesisPatcher
                         continue;
                     }
 
+                    // Check if armor has armor piece keywords
+                    bool hasVanillaKeywords = HasArmorPieceKeywords(winningArmor, state.LinkCache);
+                    DebugLog($"  Has vanilla armor keywords: {hasVanillaKeywords}");
+                    DebugLog($"  Type matched: {typeMatched}");
+                    DebugLog($"  Piece matched: {pieceMatched}");
+
+                    float finalRating;
+                    float finalWeight;
+
+                    if (!pieceMatched && !hasVanillaKeywords)
+                    {
+                        // Unknown piece - only check if we should set to 0
+                        DebugLog("  Processing unknown piece - only checking if should set to 0");
+                        finalRating = winningArmor.ArmorRating; // Keep current value
+                        finalWeight = winningArmor.Weight; // Keep current value
+
+                        if (Settings.Value.RemoveRatingForUnknownArmorPieces)
+                        {
+                            DebugLog($"  Removing rating for unknown armor piece");
+                            finalRating = 0f;
+                        }
+                        if (Settings.Value.RemoveWeightForUnknownArmorPieces)
+                        {
+                            DebugLog($"  Removing weight for unknown armor piece");
+                            finalWeight = 0f;
+                        }
+                    }
+                    else if (pieceMatched && armorPiece != null)
+                    {
+                        // Known piece - process normally with piece's rating/weight
+                        DebugLog("  Processing known piece with normal rating/weight");
+                        finalRating = armorPiece.Rating;
+                        finalWeight = armorPiece.Weight;
+                    }
+                    else
+                    {
+                        DebugLog("  Piece not matched but has vanilla keywords, skipping. FormKey: " + winningArmor.FormKey + " EditorID: " + winningArmor.EditorID);
+                        continue;
+                    }
+
                     // Check if we need to make any changes
                     bool needsChanges = false;
-                    if (Settings.Value.ModifyRatings && winningArmor.ArmorRating != armorPiece.Rating)
+                    if (Settings.Value.ModifyRatings && winningArmor.ArmorRating != finalRating)
                     {
                         needsChanges = true;
+                        DebugLog($"  Rating change needed: {winningArmor.ArmorRating} -> {finalRating}");
                     }
-                    if (Settings.Value.ModifyWeights && winningArmor.Weight != armorPiece.Weight)
+                    if (Settings.Value.ModifyWeights && winningArmor.Weight != finalWeight)
                     {
                         needsChanges = true;
+                        DebugLog($"  Weight change needed: {winningArmor.Weight} -> {finalWeight}");
                     }
 
                     // Only create an override if we need to make changes
@@ -525,19 +595,19 @@ namespace ArmourStatsSynthesisPatcher
                         if (Settings.Value.ModifyRatings)
                         {
                             DebugLog($"  Current rating: {overrideArmor.ArmorRating}");
-                            DebugLog($"  Setting rating to: {armorPiece.Rating}");
-                            overrideArmor.ArmorRating = armorPiece.Rating;
+                            DebugLog($"  Setting rating to: {finalRating}");
+                            overrideArmor.ArmorRating = finalRating;
                         }
                         if (Settings.Value.ModifyWeights)
                         {
                             DebugLog($"  Current weight: {overrideArmor.Weight}");
-                            DebugLog($"  Setting weight to: {armorPiece.Weight}");
-                            overrideArmor.Weight = armorPiece.Weight;
+                            DebugLog($"  Setting weight to: {finalWeight}");
+                            overrideArmor.Weight = finalWeight;
                         }
 
                         DebugLog($"Successfully matched armor:");
-                        DebugLog($"  New Rating: {armorPiece.Rating}");
-                        DebugLog($"  New Weight: {armorPiece.Weight}");
+                        DebugLog($"  New Rating: {finalRating}");
+                        DebugLog($"  New Weight: {finalWeight}");
                     }
                     else
                     {
