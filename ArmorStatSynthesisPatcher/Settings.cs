@@ -1219,6 +1219,18 @@ namespace ArmourStatsSynthesisPatcher
         [Tooltip("Armor piece keywords to use when removing rating/weight (semicolon separated)")]
         public string ArmorPieceKeywords { get; set; } = "ArmorCuirass;ArmorBoots;ArmorGauntlets;ArmorHelmet;ArmorShield";
 
+        [SettingName("Remove rating for armor pieces without armor slots")]
+        [Tooltip("Remove rating from parsed armor pieces that do not have any armor slots")]
+        public bool RemoveRatingForUnknownArmorSlots { get; set; } = false;
+
+        [SettingName("Remove weight for armor pieces without armor slots")]
+        [Tooltip("Remove weight from parsed armor pieces that do not have any armor slots")]
+        public bool RemoveWeightForUnknownArmorSlots { get; set; } = false;
+
+        [SettingName("Armor slots")]
+        [Tooltip("Armor slots to use when removing rating/weight (semicolon separated xEdit decimal values)")]
+        public string ArmorSlots { get; set; } = "30;31;32;33;37;39;42;46";
+
         [JsonProperty]
         public ArmorCategory VanillaLightArmors { get; set; }
 

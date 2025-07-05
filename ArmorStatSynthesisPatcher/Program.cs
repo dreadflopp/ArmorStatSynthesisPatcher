@@ -257,6 +257,23 @@ namespace ArmourStatsSynthesisPatcher
             return false;
         }
 
+        private static bool HasArmorSlots(IArmorGetter armor)
+        {
+            if (armor.BodyTemplate?.FirstPersonFlags == null) return false;
+
+            // Get armor slots from settings and convert xEdit decimal values to Mutagen bitmasks
+            var armorSlots = Settings.Value.ArmorSlots
+                .Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                .Select(slot => uint.TryParse(slot, out var value) ? value : 0u)
+                .Where(slot => slot >= 30 && slot <= 61) // Valid xEdit slot range
+                .Select(slot => 1u << (int)(slot - 30)) // Convert to Mutagen bitmask: 1 << (SlotID - 30)
+                .Aggregate(0u, (current, bitmask) => current | bitmask); // Combine all bitmasks with OR
+
+            // Check if any of the armor's FirstPersonFlags match the specified slots
+            var armorFlags = armor.BodyTemplate.FirstPersonFlags;
+            return (armorFlags & (BipedObjectFlag)armorSlots) != 0;
+        }
+
         private static void CheckSettingsIntegrity(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
         {
             LogInfo("Checking settings integrity...");
@@ -394,6 +411,9 @@ namespace ArmourStatsSynthesisPatcher
             DebugLog($"  - ModifyWeights: {Settings.Value.ModifyWeights}");
             DebugLog($"  - RemoveRatingForUnknownArmorPieces: {Settings.Value.RemoveRatingForUnknownArmorPieces}");
             DebugLog($"  - RemoveWeightForUnknownArmorPieces: {Settings.Value.RemoveWeightForUnknownArmorPieces}");
+            DebugLog($"  - RemoveRatingForUnknownArmorSlots: {Settings.Value.RemoveRatingForUnknownArmorSlots}");
+            DebugLog($"  - RemoveWeightForUnknownArmorSlots: {Settings.Value.RemoveWeightForUnknownArmorSlots}");
+            DebugLog($"  - ArmorSlots: {Settings.Value.ArmorSlots}");
 
             // Get the list of plugins to include
             var pluginIncludeList = Settings.Value.PluginIncludeList
@@ -524,6 +544,8 @@ namespace ArmourStatsSynthesisPatcher
 
                 // Try to match the armor
                 var (typeMatched, pieceMatched, armorType, armorPiece) = matcher.TryMatch(winningArmor, state.LinkCache, state);
+
+                // Process ALL armor pieces that match the armor type (Light/Heavy)
                 if (typeMatched && armorType != null)
                 {
                     // If the armor set to be passed, skip modifications
@@ -533,44 +555,54 @@ namespace ArmourStatsSynthesisPatcher
                         continue;
                     }
 
-                    // Check if armor has armor piece keywords
+                    // Check if armor has armor piece keywords and armor slots
                     bool hasVanillaKeywords = HasArmorPieceKeywords(winningArmor, state.LinkCache);
+                    bool hasArmorSlots = HasArmorSlots(winningArmor);
                     DebugLog($"  Has vanilla armor keywords: {hasVanillaKeywords}");
+                    DebugLog($"  Has armor slots: {hasArmorSlots}");
                     DebugLog($"  Type matched: {typeMatched}");
                     DebugLog($"  Piece matched: {pieceMatched}");
 
-                    float finalRating;
-                    float finalWeight;
+                    // Start with current values
+                    float finalRating = winningArmor.ArmorRating;
+                    float finalWeight = winningArmor.Weight;
 
-                    if (!pieceMatched && !hasVanillaKeywords)
+                    // Apply configured values if piece was matched
+                    if (pieceMatched && armorPiece != null)
                     {
-                        // Unknown piece - only check if we should set to 0
-                        DebugLog("  Processing unknown piece - only checking if should set to 0");
-                        finalRating = winningArmor.ArmorRating; // Keep current value
-                        finalWeight = winningArmor.Weight; // Keep current value
+                        DebugLog("  Applying configured values for matched piece");
+                        finalRating = armorPiece.Rating;
+                        finalWeight = armorPiece.Weight;
+                    }
 
+                    // Override with zero if missing keywords
+                    if (!hasVanillaKeywords)
+                    {
                         if (Settings.Value.RemoveRatingForUnknownArmorPieces)
                         {
-                            DebugLog($"  Removing rating for unknown armor piece");
+                            DebugLog($"  Removing rating for missing armor keywords");
                             finalRating = 0f;
                         }
                         if (Settings.Value.RemoveWeightForUnknownArmorPieces)
                         {
-                            DebugLog($"  Removing weight for unknown armor piece");
+                            DebugLog($"  Removing weight for missing armor keywords");
                             finalWeight = 0f;
                         }
                     }
-                    else if (pieceMatched && armorPiece != null)
+
+                    // Override with zero if missing slots
+                    if (!hasArmorSlots)
                     {
-                        // Known piece - process normally with piece's rating/weight
-                        DebugLog("  Processing known piece with normal rating/weight");
-                        finalRating = armorPiece.Rating;
-                        finalWeight = armorPiece.Weight;
-                    }
-                    else
-                    {
-                        DebugLog("  Piece not matched but has vanilla keywords, skipping. FormKey: " + winningArmor.FormKey + " EditorID: " + winningArmor.EditorID);
-                        continue;
+                        if (Settings.Value.RemoveRatingForUnknownArmorSlots)
+                        {
+                            DebugLog($"  Removing rating for missing armor slots");
+                            finalRating = 0f;
+                        }
+                        if (Settings.Value.RemoveWeightForUnknownArmorSlots)
+                        {
+                            DebugLog($"  Removing weight for missing armor slots");
+                            finalWeight = 0f;
+                        }
                     }
 
                     // Check if we need to make any changes
@@ -591,7 +623,7 @@ namespace ArmourStatsSynthesisPatcher
                     {
                         var overrideArmor = state.PatchMod.Armors.GetOrAddAsOverride(winningArmor);
 
-                        // Update the armor rating and weight from the matched piece
+                        // Update the armor rating and weight
                         if (Settings.Value.ModifyRatings)
                         {
                             DebugLog($"  Current rating: {overrideArmor.ArmorRating}");
@@ -605,7 +637,7 @@ namespace ArmourStatsSynthesisPatcher
                             overrideArmor.Weight = finalWeight;
                         }
 
-                        DebugLog($"Successfully matched armor:");
+                        DebugLog($"Successfully processed armor:");
                         DebugLog($"  New Rating: {finalRating}");
                         DebugLog($"  New Weight: {finalWeight}");
                     }
@@ -616,7 +648,7 @@ namespace ArmourStatsSynthesisPatcher
                 }
                 else
                 {
-                    DebugLog("No match found for armor");
+                    DebugLog("No armor type match found for armor");
                 }
             }
 
