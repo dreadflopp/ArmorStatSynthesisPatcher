@@ -47,6 +47,7 @@ namespace ArmourStatsSynthesisPatcher
         {
             private readonly List<(string Identifier, ArmorType Type)> _lightArmorPatterns;
             private readonly List<(string Identifier, ArmorType Type)> _heavyArmorPatterns;
+            private readonly List<(string Identifier, ArmorType Type)> _clothingPatterns;
 
             public ArmorMatcher(IEnumerable<ArmorType> armorTypes)
             {
@@ -66,6 +67,14 @@ namespace ArmourStatsSynthesisPatcher
                     .OrderByDescending(x => x.Identifier.Length)
                     .ToList();
 
+                _clothingPatterns = armorTypes
+                    .Where(t => t.Type == ArmorTypeEnum.Clothing)
+                    .SelectMany(t => t.Identifiers
+                        .Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                        .Select(id => (Identifier: id, Type: t)))
+                    .OrderByDescending(x => x.Identifier.Length)
+                    .ToList();
+
                 DebugLog("Initialized ArmorMatcher with patterns:");
                 DebugLog("Light Armor Patterns:");
                 foreach (var (identifier, type) in _lightArmorPatterns)
@@ -75,6 +84,12 @@ namespace ArmourStatsSynthesisPatcher
                 }
                 DebugLog("Heavy Armor Patterns:");
                 foreach (var (identifier, type) in _heavyArmorPatterns)
+                {
+                    DebugLog($"  Type: {type.Type}");
+                    DebugLog($"  Identifier: {identifier}");
+                }
+                DebugLog("Clothing Patterns:");
+                foreach (var (identifier, type) in _clothingPatterns)
                 {
                     DebugLog($"  Type: {type.Type}");
                     DebugLog($"  Identifier: {identifier}");
@@ -179,6 +194,7 @@ namespace ArmourStatsSynthesisPatcher
                 {
                     Mutagen.Bethesda.Skyrim.ArmorType.LightArmor => _lightArmorPatterns,
                     Mutagen.Bethesda.Skyrim.ArmorType.HeavyArmor => _heavyArmorPatterns,
+                    Mutagen.Bethesda.Skyrim.ArmorType.Clothing => _clothingPatterns,
                     _ => null
                 };
 
@@ -280,7 +296,7 @@ namespace ArmourStatsSynthesisPatcher
             bool hasIssues = false;
 
             // Get all enabled armor types
-            var enabledArmorTypes = Settings.Value.GetAllLightArmors().Concat(Settings.Value.GetAllHeavyArmors());
+            var enabledArmorTypes = Settings.Value.GetAllLightArmors().Concat(Settings.Value.GetAllHeavyArmors()).Concat(Settings.Value.GetAllClothing());
 
             // Get available plugins
             var availablePlugins = state.LoadOrder.PriorityOrder
@@ -440,7 +456,7 @@ namespace ArmourStatsSynthesisPatcher
                 .ToHashSet();
 
             // Create the armor matcher
-            var matcher = new ArmorMatcher(Settings.Value.GetAllLightArmors().Concat(Settings.Value.GetAllHeavyArmors()));
+            var matcher = new ArmorMatcher(Settings.Value.GetAllLightArmors().Concat(Settings.Value.GetAllHeavyArmors()).Concat(Settings.Value.GetAllClothing()));
 
             DebugLog("Plugin Include List:");
             foreach (var plugin in pluginIncludeList)
@@ -534,9 +550,10 @@ namespace ArmourStatsSynthesisPatcher
                     continue;
                 }
 
-                // Skip if the armor type is not Heavy or Light
+                // Skip if the armor type is not Heavy or Light or Clothing
                 if (winningArmor.BodyTemplate?.ArmorType != Mutagen.Bethesda.Skyrim.ArmorType.LightArmor &&
-                    winningArmor.BodyTemplate?.ArmorType != Mutagen.Bethesda.Skyrim.ArmorType.HeavyArmor)
+                    winningArmor.BodyTemplate?.ArmorType != Mutagen.Bethesda.Skyrim.ArmorType.HeavyArmor &&
+                    winningArmor.BodyTemplate?.ArmorType != Mutagen.Bethesda.Skyrim.ArmorType.Clothing)
                 {
                     DebugLog($"Skipping armor with unsupported type: {winningArmor.BodyTemplate?.ArmorType}");
                     continue;

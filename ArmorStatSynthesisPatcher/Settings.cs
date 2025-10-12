@@ -37,6 +37,7 @@ namespace ArmourStatsSynthesisPatcher
         Pass
     }
 
+
     public class ArmorCategory
     {
         [JsonProperty]
@@ -47,7 +48,8 @@ namespace ArmourStatsSynthesisPatcher
     public enum ArmorTypeEnum
     {
         LightArmor,
-        HeavyArmor
+        HeavyArmor,
+        Clothing
     }
 
     public class ArmorType
@@ -98,6 +100,7 @@ namespace ArmourStatsSynthesisPatcher
             CreationClubHeavyArmors = new ArmorCategory();
             UniqueHeavyArmors = new ArmorCategory();
             OtherHeavyArmors = new ArmorCategory();
+            ClothingArmors = new ArmorCategory();
             InitializeVanillaLightArmors();
             InitializeDawnguardLightArmors();
             InitializeDragonbornLightArmors();
@@ -1266,6 +1269,9 @@ namespace ArmourStatsSynthesisPatcher
         [JsonProperty]
         public ArmorCategory OtherHeavyArmors { get; set; }
 
+        [JsonProperty]
+        public ArmorCategory ClothingArmors { get; set; }
+
         public IEnumerable<ArmorCategory> GetAllArmorCategories()
         {
             yield return VanillaLightArmors;
@@ -1278,6 +1284,7 @@ namespace ArmourStatsSynthesisPatcher
             yield return DragonbornHeavyArmors;
             yield return CreationClubHeavyArmors;
             yield return OtherHeavyArmors;
+            yield return ClothingArmors;
         }
 
         public IEnumerable<ArmorType> GetAllLightArmors()
@@ -1304,6 +1311,17 @@ namespace ArmourStatsSynthesisPatcher
                     {
                         yield return armor;
                     }
+                }
+            }
+        }
+
+        public IEnumerable<ArmorType> GetAllClothing()
+        {
+            foreach (var armor in ClothingArmors.Armor.Values)
+            {
+                if (armor.MatchBehavior != ArmorMatchBehavior.DeactivateRule)
+                {
+                    yield return armor;
                 }
             }
         }
