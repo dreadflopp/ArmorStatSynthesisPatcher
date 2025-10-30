@@ -436,7 +436,7 @@ namespace ArmourStatsSynthesisPatcher
 
             var daedricMailArmor = new ArmorType { Identifiers = "ArmorMaterialDaedric;IAKMaterialDaedric", Type = ArmorTypeEnum.LightArmor };
             daedricMailArmor.Armor["Armor"] = new ArmorPiece { Identifiers = "ArmorCuirass", Rating = 44f, Weight = 12.0f };
-            daedricMailArmor.Armor["Helmet"] = new ArmorPiece { Identifiers = "ArmorHelmet", Rating = 22f };
+            daedricMailArmor.Armor["Helmet"] = new ArmorPiece { Identifiers = "ArmorHelmet", Rating = 22f, Weight = 5.0f };
             daedricMailArmor.Armor["Boots"] = new ArmorPiece { Identifiers = "ArmorBoots", Rating = 14f, Weight = 4.0f };
             daedricMailArmor.Armor["Gauntlets"] = new ArmorPiece { Identifiers = "ArmorGauntlets", Rating = 14f, Weight = 3.0f };
             daedricMailArmor.Armor["Shield"] = new ArmorPiece { Identifiers = "ArmorShield", Rating = 32f, Weight = 10.0f };
