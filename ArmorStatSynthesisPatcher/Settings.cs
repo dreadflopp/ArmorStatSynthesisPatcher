@@ -454,7 +454,8 @@ namespace ArmourStatsSynthesisPatcher
             lightDragonPriestHelmets.Armor["Krosis"] = new ArmorPiece { Identifiers = "061CB9:Skyrim.esm", Rating = 21f, Weight = 5.0f };
             lightDragonPriestHelmets.Armor["Volsung"] = new ArmorPiece { Identifiers = "061CAB:Skyrim.esm", Rating = 21f, Weight = 5.0f };
             lightDragonPriestHelmets.Armor["Morokei"] = new ArmorPiece { Identifiers = "061C8B:Skyrim.esm", Rating = 5f, Weight = 4.0f };
-            lightDragonPriestHelmets.Armor["Wooden Mask"] = new ArmorPiece { Identifiers = "061CCA:Skyrim.esm", Rating = 1, Weight = 2.0f };
+            lightDragonPriestHelmets.Armor["Wooden Mask"] = new ArmorPiece { Identifiers = "061CCA:Skyrim.esm", Rating = 1f, Weight = 2.0f };
+            lightDragonPriestHelmets.Armor["Rahgot"] = new ArmorPiece { Identifiers = "061CC0:Skyrim.esm", Rating = 17f, Weight = 4.0f };
             UniqueLightArmors.Armor["Masks Light"] = lightDragonPriestHelmets;
 
             var oldGodsArmor = new ArmorType { Identifiers = "ArmorMaterialMS02Forsworn", Type = ArmorTypeEnum.LightArmor, MatchBehavior = ArmorMatchBehavior.Pass };
@@ -864,35 +865,13 @@ namespace ArmourStatsSynthesisPatcher
             indorilArmor.Armor["Helmet"] = new ArmorPiece { Identifiers = "ArmorHelmet", Rating = 19f, Weight = 6.0f };
             CreationClubHeavyArmors.Armor["Indoril"] = indorilArmor;
 
-            var vigilcorruptedArmor = new ArmorType { Identifiers = "Vigil Corrupted", Type = ArmorTypeEnum.HeavyArmor };
-            vigilcorruptedArmor.Armor["Armor"] = new ArmorPiece { Identifiers = "ArmorCuirass", Rating = 40f, Weight = 38.0f };
-            vigilcorruptedArmor.Armor["Boots"] = new ArmorPiece { Identifiers = "ArmorBoots", Rating = 14f, Weight = 9.0f };
-            vigilcorruptedArmor.Armor["Gauntlets"] = new ArmorPiece { Identifiers = "ArmorGauntlets", Rating = 14f, Weight = 6.0f };
-            vigilcorruptedArmor.Armor["Helmet"] = new ArmorPiece { Identifiers = "ArmorHelmet", Rating = 19f, Weight = 6.0f };
-            vigilcorruptedArmor.Armor["Open Helmet"] = new ArmorPiece { Identifiers = "Open Helmet", Rating = 17f, Weight = 5.0f };
-            CreationClubHeavyArmors.Armor["Vigil Corrupted"] = vigilcorruptedArmor;
-
-            var vigilenforcerArmor = new ArmorType { Identifiers = "Vigil Enforcer", Type = ArmorTypeEnum.HeavyArmor };
-            vigilenforcerArmor.Armor["Armor"] = new ArmorPiece { Identifiers = "ArmorCuirass", Rating = 40f, Weight = 38.0f };
-            vigilenforcerArmor.Armor["Boots"] = new ArmorPiece { Identifiers = "ArmorBoots", Rating = 14f, Weight = 9.0f };
-            vigilenforcerArmor.Armor["Gauntlets"] = new ArmorPiece { Identifiers = "ArmorGauntlets", Rating = 14f, Weight = 6.0f };
-            vigilenforcerArmor.Armor["Helmet"] = new ArmorPiece { Identifiers = "ArmorHelmet", Rating = 17f, Weight = 5.0f };
-            CreationClubHeavyArmors.Armor["Vigil Enforcer"] = vigilenforcerArmor;
-
-            var vigilsilverhandArmor = new ArmorType { Identifiers = "Vigil Silver Hand", Type = ArmorTypeEnum.HeavyArmor };
-            vigilsilverhandArmor.Armor["Armor"] = new ArmorPiece { Identifiers = "ArmorCuirass", Rating = 40f, Weight = 38.0f };
-            vigilsilverhandArmor.Armor["Boots"] = new ArmorPiece { Identifiers = "ArmorBoots", Rating = 14f, Weight = 9.0f };
-            vigilsilverhandArmor.Armor["Gauntlets"] = new ArmorPiece { Identifiers = "ArmorGauntlets", Rating = 14f, Weight = 6.0f };
-            vigilsilverhandArmor.Armor["Helmet"] = new ArmorPiece { Identifiers = "ArmorHelmet", Rating = 17f, Weight = 5.0f };
-            CreationClubHeavyArmors.Armor["Vigil Silver Hand"] = vigilsilverhandArmor;
-
-            var vigilveteranArmor = new ArmorType { Identifiers = "Vigil Veteran", Type = ArmorTypeEnum.HeavyArmor };
-            vigilveteranArmor.Armor["Armor"] = new ArmorPiece { Identifiers = "ArmorCuirass", Rating = 40f, Weight = 38.0f };
-            vigilveteranArmor.Armor["Boots"] = new ArmorPiece { Identifiers = "ArmorBoots", Rating = 14f, Weight = 9.0f };
-            vigilveteranArmor.Armor["Gauntlets"] = new ArmorPiece { Identifiers = "ArmorGauntlets", Rating = 14f, Weight = 6.0f };
-            vigilveteranArmor.Armor["Helmet"] = new ArmorPiece { Identifiers = "ArmorHelmet", Rating = 19f, Weight = 6.0f };
-            vigilveteranArmor.Armor["Open Helmet"] = new ArmorPiece { Identifiers = "Open Helmet", Rating = 17f, Weight = 5.0f };
-            CreationClubHeavyArmors.Armor["Vigil Veteran"] = vigilveteranArmor;
+            var vigilArmor = new ArmorType { Identifiers = "Vigil;Vigilant;Silver Hand", Type = ArmorTypeEnum.HeavyArmor };
+            vigilArmor.Armor["Armor"] = new ArmorPiece { Identifiers = "ArmorCuirass", Rating = 40f, Weight = 38.0f };
+            vigilArmor.Armor["Boots"] = new ArmorPiece { Identifiers = "ArmorBoots", Rating = 14f, Weight = 9.0f };
+            vigilArmor.Armor["Gauntlets"] = new ArmorPiece { Identifiers = "ArmorGauntlets", Rating = 14f, Weight = 6.0f };
+            vigilArmor.Armor["Helmet"] = new ArmorPiece { Identifiers = "ArmorHelmet", Rating = 19f, Weight = 6.0f };
+            vigilArmor.Armor["Open Helmet"] = new ArmorPiece { Identifiers = "Open Helmet", Rating = 17f, Weight = 5.0f };
+            CreationClubHeavyArmors.Armor["Vigil/Vigilant"] = vigilArmor;
 
             var orcishplateArmor = new ArmorType { Identifiers = "Orcish Plate", Type = ArmorTypeEnum.HeavyArmor };
             orcishplateArmor.Armor["Armor"] = new ArmorPiece { Identifiers = "ArmorCuirass", Rating = 41f, Weight = 35.0f };
@@ -924,12 +903,12 @@ namespace ArmourStatsSynthesisPatcher
             crusaderArmor.Armor["Shield"] = new ArmorPiece { Identifiers = "ArmorShield", Rating = 32f, Weight = 14.0f };
             CreationClubLightArmors.Armor["Crusader"] = crusaderArmor;
 
-            var herhandArmor = new ArmorType { Identifiers = "Her Hand", Type = ArmorTypeEnum.HeavyArmor };
+            var herhandArmor = new ArmorType { Identifiers = "Her Hand;High Indoril", Type = ArmorTypeEnum.HeavyArmor };
             herhandArmor.Armor["Armor"] = new ArmorPiece { Identifiers = "ArmorCuirass", Rating = 43f, Weight = 36.0f };
             herhandArmor.Armor["Boots"] = new ArmorPiece { Identifiers = "ArmorBoots", Rating = 16f, Weight = 6.0f };
             herhandArmor.Armor["Gauntlets"] = new ArmorPiece { Identifiers = "ArmorGauntlets", Rating = 16f, Weight = 6.0f };
             herhandArmor.Armor["Helmet"] = new ArmorPiece { Identifiers = "ArmorHelmet", Rating = 21f, Weight = 8.0f };
-            CreationClubHeavyArmors.Armor["Her Hand"] = herhandArmor;
+            CreationClubHeavyArmors.Armor["Her Hand/High Indoril"] = herhandArmor;
 
             var ebonyplateArmor = new ArmorType { Identifiers = "Ebony Plate;Blades Ebony", Type = ArmorTypeEnum.HeavyArmor };
             ebonyplateArmor.Armor["Armor"] = new ArmorPiece { Identifiers = "ArmorCuirass", Rating = 44f, Weight = 38.0f };
@@ -1054,6 +1033,7 @@ namespace ArmourStatsSynthesisPatcher
             heavyDragonPriestHelmets.Armor["Dagoth Ur"] = new ArmorPiece { Identifiers = "000821:ccasvsse001-almsivi.esm", Rating = 19, Weight = 6.0f };
             heavyDragonPriestHelmets.Armor["Sotha Sil"] = new ArmorPiece { Identifiers = "000820:ccasvsse001-almsivi.esm", Rating = 19, Weight = 6.0f };
             heavyDragonPriestHelmets.Armor["Vivec"] = new ArmorPiece { Identifiers = "000822:ccasvsse001-almsivi.esm", Rating = 19 };
+            heavyDragonPriestHelmets.Armor["Volsung"] = new ArmorPiece { Identifiers = "061CAB:Skyrim.esm", Rating = 23f, Weight = 17.0f };
             UniqueHeavyArmors.Armor["Masks Heavy"] = heavyDragonPriestHelmets;
 
             var miraakHeavy = new ArmorType

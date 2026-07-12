@@ -96,6 +96,117 @@ namespace ArmourStatsSynthesisPatcher
                 }
             }
 
+            private static List<T> GetFormIdMatches<T>(IArmorGetter armor, IEnumerable<(string Identifier, T Result)> patterns)
+            {
+                var armorFormKey = armor.FormKey.ToString();
+                return patterns
+                    .Where(p => p.Identifier.Equals(armorFormKey, StringComparison.OrdinalIgnoreCase))
+                    .Select(p => p.Result)
+                    .Distinct()
+                    .ToList();
+            }
+
+            private static T? GetFirstNameMatch<T>(IArmorGetter armor, IEnumerable<(string Identifier, T Result)> patterns)
+            {
+                var armorName = armor.Name?.String?.ToLowerInvariant() ?? "";
+                if (string.IsNullOrEmpty(armorName)) return default;
+
+                foreach (var (identifier, result) in patterns)
+                {
+                    if (Regex.IsMatch(armorName, $@"\b{Regex.Escape(identifier.ToLowerInvariant())}\b", RegexOptions.IgnoreCase))
+                    {
+                        return result;
+                    }
+                }
+
+                return default;
+            }
+
+            private static List<T> GetKeywordMatches<T>(IArmorGetter armor, IEnumerable<(string Identifier, T Result)> patterns, ILinkCache linkCache)
+            {
+                var matches = new List<T>();
+                if (armor.Keywords == null) return matches;
+
+                foreach (var keyword in armor.Keywords)
+                {
+                    if (!keyword.TryResolve(linkCache, out var keywordRecord)) continue;
+
+                    var keywordName = keywordRecord.EditorID?.ToLowerInvariant() ?? "";
+                    foreach (var (identifier, result) in patterns)
+                    {
+                        if (Regex.IsMatch(keywordName, $@"\b{Regex.Escape(identifier.ToLowerInvariant())}\b", RegexOptions.IgnoreCase))
+                        {
+                            if (!matches.Contains(result))
+                            {
+                                matches.Add(result);
+                            }
+                        }
+                    }
+                }
+
+                return matches;
+            }
+
+            private List<ArmorType> GetMatchingArmorTypes(
+                IArmorGetter armor,
+                IEnumerable<(string Identifier, ArmorType Result)> patterns,
+                ILinkCache linkCache)
+            {
+                DebugLog("Checking FormID matches for armor type");
+                var formIdMatches = GetFormIdMatches(armor, patterns);
+                if (formIdMatches.Count > 1)
+                {
+                    LogWarning($"Multiple armor type FormID matches for {armor.FormKey}. Using the first match. This is likely a settings error.");
+                }
+                if (formIdMatches.Count > 0)
+                {
+                    return new List<ArmorType> { formIdMatches[0] };
+                }
+
+                DebugLog("Checking name matches for armor type");
+                var nameMatch = GetFirstNameMatch(armor, patterns);
+                if (nameMatch != null)
+                {
+                    return new List<ArmorType> { nameMatch };
+                }
+
+                DebugLog("Checking keyword matches for armor type");
+                return GetKeywordMatches(armor, patterns, linkCache);
+            }
+
+            private List<ArmorPiece> GetMatchingArmorPieces(
+                IArmorGetter armor,
+                IEnumerable<(string Identifier, ArmorPiece Result)> patterns,
+                ILinkCache linkCache)
+            {
+                var matches = new List<ArmorPiece>();
+
+                var formIdMatches = GetFormIdMatches(armor, patterns);
+                foreach (var piece in formIdMatches)
+                {
+                    if (!matches.Contains(piece))
+                    {
+                        matches.Add(piece);
+                    }
+                }
+
+                var nameMatch = GetFirstNameMatch(armor, patterns);
+                if (nameMatch != null && !matches.Contains(nameMatch))
+                {
+                    matches.Add(nameMatch);
+                }
+
+                foreach (var piece in GetKeywordMatches(armor, patterns, linkCache))
+                {
+                    if (!matches.Contains(piece))
+                    {
+                        matches.Add(piece);
+                    }
+                }
+
+                return matches;
+            }
+
             private (bool Matched, T? Result) TryMatchIdentifiers<T>(
                 IArmorGetter armor,
                 IEnumerable<(string Identifier, T Result)> patterns,
@@ -205,47 +316,64 @@ namespace ArmourStatsSynthesisPatcher
                 }
 
                 // Try to match the armor type
-                var (matched, armorType) = TryMatchIdentifiers(armor, patterns, linkCache);
-                if (!matched || armorType == null)
+                var matchedArmorTypes = GetMatchingArmorTypes(armor, patterns, linkCache);
+                if (!matchedArmorTypes.Any())
                 {
                     DebugLog("No match found for armor");
                     return (false, false, null, null);
                 }
 
-                // Now try to match the specific piece
-                var pieces = armorType.Armor.Values
-                    .SelectMany(p => p.Identifiers
-                        .Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-                        .Select(id => (Identifier: id, Result: p)))
-                    .OrderByDescending(x => x.Identifier.Length)
-                    .ToList();
+                ArmorType? bestArmorType = null;
+                ArmorPiece? bestArmorPiece = null;
+                float bestRating = float.MinValue;
 
-                DebugLog("Available pieces to match against:");
-                foreach (var piece in pieces)
+                foreach (var armorType in matchedArmorTypes)
                 {
-                    DebugLog($"  Piece: {piece.Identifier}");
-                    DebugLog($"    Rating: {piece.Result.Rating}");
-                    DebugLog($"    Weight: {piece.Result.Weight}");
+                    var pieces = armorType.Armor.Values
+                        .SelectMany(p => p.Identifiers
+                            .Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                            .Select(id => (Identifier: id, Result: p)))
+                        .OrderByDescending(x => x.Identifier.Length)
+                        .ToList();
+
+                    DebugLog($"Available pieces to match against from set {armorType.Identifiers}:");
+                    foreach (var piece in pieces)
+                    {
+                        DebugLog($"  Piece: {piece.Identifier}");
+                        DebugLog($"    Rating: {piece.Result.Rating}");
+                        DebugLog($"    Weight: {piece.Result.Weight}");
+                    }
+
+                    var matchingPieces = GetMatchingArmorPieces(armor, pieces, linkCache);
+
+                    // If there's only one piece in the armor type and it has the same identifier as the armor type,
+                    // we can include that piece directly as a candidate
+                    if (!matchingPieces.Any() && pieces.Count == 1 && pieces[0].Identifier.Equals(armorType.Identifiers, StringComparison.OrdinalIgnoreCase))
+                    {
+                        matchingPieces.Add(pieces[0].Result);
+                    }
+
+                    foreach (var candidatePiece in matchingPieces)
+                    {
+                        if (candidatePiece.Rating > bestRating)
+                        {
+                            bestRating = candidatePiece.Rating;
+                            bestArmorType = armorType;
+                            bestArmorPiece = candidatePiece;
+                        }
+                    }
                 }
 
-                // If there's only one piece in the armor type and it has the same identifier as the armor type,
-                // we can return that piece directly
-                if (pieces.Count == 1 && pieces[0].Identifier.Equals(armorType.Identifiers, StringComparison.OrdinalIgnoreCase))
+                if (bestArmorPiece != null && bestArmorType != null)
                 {
-                    DebugLog($"Found direct match with armor type identifier: {armorType.Identifiers}");
-                    return (true, true, armorType, pieces[0].Result);
-                }
-
-                var (pieceMatched, matchedPiece) = TryMatchIdentifiers(armor, pieces, linkCache);
-                if (pieceMatched && matchedPiece != null)
-                {
-                    DebugLog($"Matching succeeded with rating: {matchedPiece.Rating}");
-                    DebugLog($"Matched piece weight: {matchedPiece.Weight}");
-                    return (true, true, armorType, matchedPiece);
+                    DebugLog($"Selected set: {bestArmorType.Identifiers}");
+                    DebugLog($"Matching succeeded with rating: {bestArmorPiece.Rating}");
+                    DebugLog($"Matched piece weight: {bestArmorPiece.Weight}");
+                    return (true, true, bestArmorType, bestArmorPiece);
                 }
 
                 DebugLog("No piece match found, but armor type matched");
-                return (true, false, armorType, null);
+                return (true, false, matchedArmorTypes[0], null);
             }
         }
 
