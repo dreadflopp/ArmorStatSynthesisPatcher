@@ -15,4 +15,10 @@
     <PackageReference Include="Mutagen.Bethesda.Synthesis" Version="0.34.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

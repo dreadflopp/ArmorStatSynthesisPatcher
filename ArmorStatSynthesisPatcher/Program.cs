@@ -13,6 +13,7 @@ using System.Text.Json;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
+using System.Reflection;
 
 namespace ArmourStatsSynthesisPatcher
 {
@@ -41,6 +42,55 @@ namespace ArmourStatsSynthesisPatcher
         private static void LogInfo(string message)
         {
             Console.WriteLine(message);
+        }
+
+        private static void EnsureOptionalPresetExists(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
+        {
+            const string presetFileName = "settings.nerfed.json";
+
+            try
+            {
+                var extraSettingsDataPath = state.ExtraSettingsDataPath;
+                if (string.IsNullOrWhiteSpace(extraSettingsDataPath))
+                {
+                    LogWarning($"Cannot install optional preset '{presetFileName}' because ExtraSettingsDataPath was empty.");
+                    return;
+                }
+
+                var destinationPath = Path.Combine(extraSettingsDataPath, presetFileName);
+                if (File.Exists(destinationPath))
+                {
+                    return;
+                }
+
+                var assemblyDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+                if (string.IsNullOrWhiteSpace(assemblyDirectory))
+                {
+                    LogWarning($"Optional preset '{presetFileName}' could not be located because the patcher assembly directory was unavailable.");
+                    return;
+                }
+
+                var sourceCandidates = new[]
+                {
+                    Path.Combine(assemblyDirectory, "Data", presetFileName),
+                    Path.Combine(assemblyDirectory, presetFileName)
+                };
+
+                var sourcePath = sourceCandidates.FirstOrDefault(File.Exists);
+                if (string.IsNullOrWhiteSpace(sourcePath))
+                {
+                    LogWarning($"Optional preset '{presetFileName}' was not found next to the patcher executable.");
+                    return;
+                }
+
+                Directory.CreateDirectory(extraSettingsDataPath);
+                File.Copy(sourcePath, destinationPath, overwrite: false);
+                LogInfo($"Installed optional preset: {destinationPath}");
+            }
+            catch (Exception ex)
+            {
+                LogWarning($"Failed to install optional preset '{presetFileName}': {ex.Message}");
+            }
         }
 
         private class ArmorMatcher
@@ -205,93 +255,6 @@ namespace ArmourStatsSynthesisPatcher
                 }
 
                 return matches;
-            }
-
-            private (bool Matched, T? Result) TryMatchIdentifiers<T>(
-                IArmorGetter armor,
-                IEnumerable<(string Identifier, T Result)> patterns,
-                ILinkCache linkCache)
-            {
-                // Try matching against FormID first
-                DebugLog("Checking FormID matches");
-                var armorFormKey = armor.FormKey.ToString();
-                foreach (var (identifier, result) in patterns)
-                {
-                    DebugLog($"  Checking against identifier: {identifier}");
-                    if (identifier.Equals(armorFormKey, StringComparison.OrdinalIgnoreCase))
-                    {
-                        DebugLog($"  Found FormID match with identifier: {identifier}");
-                        return (true, result);
-                    }
-                }
-
-                // Try matching against armor name
-                var armorName = armor.Name?.String?.ToLowerInvariant() ?? "";
-                if (!string.IsNullOrEmpty(armorName))
-                {
-                    DebugLog($"Checking name match: {armorName}");
-                    foreach (var (identifier, result) in patterns)
-                    {
-                        DebugLog($"  Checking against identifier: {identifier}");
-                        if (Regex.IsMatch(armorName, $@"\b{Regex.Escape(identifier.ToLowerInvariant())}\b", RegexOptions.IgnoreCase))
-                        {
-                            DebugLog($"  Found name match with identifier: {identifier}");
-                            return (true, result);
-                        }
-                    }
-                }
-
-                // Try matching against keywords
-                if (armor.Keywords != null)
-                {
-                    DebugLog("Checking keyword matches");
-                    // Sort patterns by rating for keyword matches
-                    var sortedPatterns = patterns;
-                    if (typeof(T) == typeof(ArmorPiece))
-                    {
-                        sortedPatterns = patterns.OrderByDescending(p =>
-                        {
-                            if (p.Result is ArmorPiece piece && piece != null)
-                            {
-                                return piece.Rating;
-                            }
-                            return 0;
-                        });
-                    }
-                    else if (typeof(T) == typeof(ArmorType))
-                    {
-                        sortedPatterns = patterns.OrderByDescending(p =>
-                        {
-                            if (p.Result is ArmorType type && type != null && type.Armor != null)
-                            {
-                                return type.Armor.Values
-                                    .Where(piece => piece != null)
-                                    .Max(piece => piece.Rating);
-                            }
-                            return 0;
-                        });
-                    }
-
-                    foreach (var keyword in armor.Keywords)
-                    {
-                        if (keyword.TryResolve(linkCache, out var keywordRecord))
-                        {
-                            var keywordName = keywordRecord.EditorID?.ToLowerInvariant() ?? "";
-                            DebugLog($"  Checking keyword: {keywordName}");
-                            foreach (var (identifier, result) in sortedPatterns)
-                            {
-                                DebugLog($"    Checking against identifier: {identifier}");
-                                if (Regex.IsMatch(keywordName, $@"\b{Regex.Escape(identifier.ToLowerInvariant())}\b", RegexOptions.IgnoreCase))
-                                {
-                                    DebugLog($"    Found keyword match with identifier: {identifier}");
-                                    return (true, result);
-                                }
-                            }
-                        }
-                    }
-                }
-
-                return (false, default);
             }
 
             public (bool TypeMatched, bool PieceMatched, ArmorType? Type, ArmorPiece? Piece) TryMatch(IArmorGetter armor, ILinkCache linkCache, IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
@@ -543,6 +506,9 @@ namespace ArmourStatsSynthesisPatcher
             LogInfo("========================================");
             LogInfo("Starting Armor Stats Synthesis Patcher");
             LogInfo("========================================");
+
+            // Ensure users have access to optional presets in their live Synthesis settings folder.
+            EnsureOptionalPresetExists(state);
 
             // Check settings integrity before proceeding
             CheckSettingsIntegrity(state);

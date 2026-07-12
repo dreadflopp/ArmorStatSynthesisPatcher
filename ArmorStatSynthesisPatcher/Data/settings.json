@@ -1,0 +1,3509 @@
+{
+  "DebugMode": false,
+  "PluginFilter": "IncludePlugins",
+  "PluginIncludeList": "Skyrim.esm;Dawnguard.esm;Dragonborn.esm;ccasvsse001-almsivi.esm;ccbgssse008-wraithguard.esl;ccbgssse021-lordsmail.esl;ccbgssse025-advdsgs.esm;ccbgssse041-netchleather.esl;ccbgssse050-ba_daedric.esl;ccbgssse051-ba_daedricmail.esl;ccbgssse052-ba_iron.esl;ccbgssse053-ba_leather.esl;ccbgssse054-ba_orcish.esl; ccbgssse055-ba_orcishscaled.esl;ccbgssse056-ba_silver.esl;ccbgssse057-ba_stalhrim.esl;ccbgssse058-ba_steel.esl;ccbgssse059-ba_dragonplate.esl;ccbgssse060-ba_dragonscale.esl;ccbgssse061-ba_dwarven.esl; ccbgssse062-ba_dwarvenmail.esl;ccbgssse063-ba_ebony.esl;ccbgssse064-ba_elven.esl;ccbgssse069-contest.esl;cccbhsse001-gaunt.esl;ccedhsse002-splkntset.esl;ccedhsse003-redguard.esl;ccffbsse001-imperialdragon.esl; cckrtsse001_altar.esl;ccmtysse001-knightsofthenine.esl;ccmtysse002-ve.esl;ccrmssse001-necrohouse.esl;cctwbsse001-puzzledungeon.esm;ccvsvsse003-necroarts.esl;Dwarfsphere.esp; Girl's Travel Outfit.esp;GVLT_LifeswornVestige.esp;Hothtrooper44_ArmorCompilation.esp;Kad_MoonMonkRobes.esp;KhajiitWillFollow.esp;Lollygagging Fashions.esp;Midwood Isle.esp; MoonAndStar_MAS.esp;moonpath.esp;PigIronSet.esl;RihadSwordsmanSet.esl;SaviorsHideStandalone.esp;Skyrim Extended Cut - Saints and Seducers.esp;_Fuse00_ArmorRaven.esp;[FB] Master Thief Armor.esp; [FB] Templar Assassin.esp;018Auri.esp;Ashe - Fire and Blood.esp;BSMBonemoldSet.esp;ForswornArmorVariantsFurMashup.esp;ForswornHeaddressVariants.esp;JS Armored Circlets SE.esp; BSHeartland.esm;BSAssets.esm;",
+  "PluginExcludeList": "",
+  "IgnoredArmorFormKeys": "0C33BD:Skyrim.esm;0B8837:Skyrim.esm;015023:MoonAndStar_MAS.esp",
+  "ModifyRatings": true,
+  "ModifyWeights": true,
+  "RemoveRatingForUnknownArmorPieces": false,
+  "RemoveWeightForUnknownArmorPieces": false,
+  "ArmorPieceKeywords": "ArmorCuirass;ArmorBoots;ArmorGauntlets;ArmorHelmet;ArmorShield",
+  "RemoveRatingForUnknownArmorSlots": false,
+  "RemoveWeightForUnknownArmorSlots": false,
+  "ArmorSlots": "30;31;32;33;37;39;42;46",
+  "VanillaLightArmors": {
+    "Armor": {
+      "Hide": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialHide;Hide",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 20.0,
+            "Weight": 5.0
+          },
+          "Studded Armor": {
+            "Identifiers": "Studded Armor",
+            "Rating": 23.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 5.0,
+            "Weight": 1.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 5.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 10.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 15.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Worn Shrouded": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Worn Shrouded",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 20.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 3.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 4.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 8.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Stormcloak": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialStormcloak;0A6D7F:Skyrim.esm;0A6D7D:Skyrim.esm",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 21.0,
+            "Weight": 8.0
+          },
+          "Fur Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 5.0,
+            "Weight": 2.0
+          },
+          "Fur Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 5.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 10.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Fur": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Fur",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 23.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 6.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 6.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 11.0,
+            "Weight": 1.0
+          }
+        }
+      },
+      "Guard": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Imperial;ArmorMaterialImperialLight;Guard's",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 23.0,
+            "Weight": 6.0
+          },
+          "Studded Armor": {
+            "Identifiers": "Studded Imperial Armor",
+            "Rating": 23.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 6.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 6.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 19.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Pentius": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialPenitus",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 23.0,
+            "Weight": 6.0
+          },
+          "Studded Armor": {
+            "Identifiers": "Studded Imperial Armor",
+            "Rating": 23.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 6.0,
+            "Weight": 1.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 6.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 11.0,
+            "Weight": 1.0
+          }
+        }
+      },
+      "Elven Light": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Elven Light",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 26.0,
+            "Weight": 4.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 7.0,
+            "Weight": 1.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 7.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 12.0,
+            "Weight": 1.0
+          }
+        }
+      },
+      "Forsworn": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialForsworn",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 26.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 12.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Leather": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialLeather;IAKMaterialLeather",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 26.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 12.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Stormcloak Officer": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialBearStormcloak",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 27.0,
+            "Weight": 8.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 12.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Eastmarch": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Eastmarch",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 27.0,
+            "Weight": 8.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 12.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Elven": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialElven;IAKMaterialElven",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 29.0,
+            "Weight": 4.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 8.0,
+            "Weight": 1.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 8.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 13.0,
+            "Weight": 1.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 21.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Shrouded": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Shrouded;Templar Assassin",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 29.0,
+            "Weight": 7.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 8.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 8.0,
+            "Weight": 2.0
+          },
+          "Armor and Gloves": {
+            "Identifiers": "Armor and Gloves",
+            "Rating": 37.0,
+            "Weight": 9.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 13.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Thieves Guild": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialThievesGuild;Master Thief",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 29.0,
+            "Weight": 7.0
+          },
+          "Improved Armor": {
+            "Identifiers": "0D3ACC:Skyrim.esm",
+            "Rating": 30.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 9.0,
+            "Weight": 1.5
+          },
+          "Improved Boots": {
+            "Identifiers": "0D3ACB:Skyrim.esm",
+            "Rating": 10.0,
+            "Weight": 1.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 9.0,
+            "Weight": 1.0
+          },
+          "Improved Gauntlets": {
+            "Identifiers": "0D3ACD:Skyrim.esm",
+            "Rating": 10.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 13.0,
+            "Weight": 1.5
+          },
+          "Improved Helmet": {
+            "Identifiers": "0D3ACE:Skyrim.esm",
+            "Rating": 15.0,
+            "Weight": 1.0
+          }
+        }
+      },
+      "Scaled": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialScaled;IAKMaterialAdvancedScale",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 32.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 9.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 9.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 14.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 19.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Ancient Shrouded": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Ancient Shrouded",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 33.0,
+            "Weight": 5.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 12.0,
+            "Weight": 0.5
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 12.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 15.0,
+            "Weight": 1.0
+          }
+        }
+      },
+      "Gilded Elven": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialElvenGilded",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 35.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Elven Hunter": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Elven Hunter",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 31.0,
+            "Weight": 4.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 10.0,
+            "Weight": 1.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 10.0,
+            "Weight": 1.0
+          }
+        }
+      },
+      "Glass": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialGlass;IAKMaterialGlass",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 38.0,
+            "Weight": 7.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 16.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 27.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Guild Master's": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialThievesGuildLeader",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 38.0,
+            "Weight": 10.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 16.0,
+            "Weight": 3.0
+          }
+        }
+      },
+      "Dragonscale": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialDragonscale;IAKMaterialDragonScale",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 41.0,
+            "Weight": 10.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 12.0,
+            "Weight": 3.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 12.0,
+            "Weight": 3.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 17.0,
+            "Weight": 4.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 29.0,
+            "Weight": 6.0
+          }
+        }
+      }
+    }
+  },
+  "DawnguardLightArmors": {
+    "Armor": {
+      "Dawnguard": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "DLC1ArmorMaterialDawnguard",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 29.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 8.0,
+            "Weight": 1.5
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 8.0,
+            "Weight": 1.5
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 16.0,
+            "Weight": 1.5
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 26.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Vampire": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Vampire",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 25.0,
+            "Weight": 5.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 8.0,
+            "Weight": 1.5
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 7.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Ancient Falmer": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Ancient Falmer;Curate's",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 38.0,
+            "Weight": 7.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 16.0,
+            "Weight": 2.0
+          }
+        }
+      }
+    }
+  },
+  "DragonbornLightArmors": {
+    "Armor": {
+      "Skaal": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Skaal",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 26.0,
+            "Weight": 5.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 7.0,
+            "Weight": 1.5
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 7.0,
+            "Weight": 1.5
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 6.0,
+            "Weight": 1.5
+          }
+        }
+      },
+      "Morag Tong": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "DLC2ArmorMaterialMoragTong",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 26.0,
+            "Weight": 5.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 8.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 12.0,
+            "Weight": 1.5
+          }
+        }
+      },
+      "Chitin": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "DLC2ArmorMaterialChitinLight;WAF_MaterialChitin",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 30.0,
+            "Weight": 4.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 8.5,
+            "Weight": 1.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 8.5,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 13.5,
+            "Weight": 1.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 24.5,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Blackguard's": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "USLEEPArmorMaterialBlackguard",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 33.0,
+            "Weight": 7.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 13.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 8.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 18.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Stalhrim Light": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "DLC2ArmorMaterialStalhrimLight",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 39.0,
+            "Weight": 7.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 11.5,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 11.5,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 16.5,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 29.5,
+            "Weight": 10.0
+          }
+        }
+      }
+    }
+  },
+  "CreationClubLightArmors": {
+    "Armor": {
+      "Dwarven Mail": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialDwarven;IAKMaterialDwarven",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 25.0,
+            "Weight": 15.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 10.0,
+            "Weight": 5.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 10.0,
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 15.0,
+            "Weight": 5.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 19.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Leather Scout": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Leather Scout",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 27.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 8.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 8.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 13.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Netch Leather": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Netch Leather",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 32.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 16.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "Tower Shield",
+            "Rating": 24.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Shadowed Netch Leather": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Shadowed Netch Leather",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 33.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 12.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 12.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 17.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "Tower Shield",
+            "Rating": 25.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Remnant": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Remnant",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 34.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 8.0,
+            "Weight": 1.5
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 9.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 13.0,
+            "Weight": 1.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 24.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Boiled/Painted Netch Leather": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Painted Netch Leather;Boiled Netch Leather",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 35.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 20.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Shadowed Boiled/Painted Netch Leather": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Shadowed Boiled Netch Leather",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 36.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 22.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Orcish Scaled": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialOrcish;IAKMaterialOrcish",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 36.0,
+            "Weight": 14.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 13.0,
+            "Weight": 4.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 13.0,
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 18.0,
+            "Weight": 6.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 24.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Dark Seducer": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ccBGSSSE025_ArmorMaterialDark",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 36.0,
+            "Weight": 5.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 10.0,
+            "Weight": 1.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 10.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 14.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 23.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Reforged Crusader": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Crusader",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 38.0,
+            "Weight": 7.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 16.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield;Shield",
+            "Rating": 27.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Studded Dragonscale": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Studded Dragonscale",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 43.0,
+            "Weight": 10.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 14.0,
+            "Weight": 3.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 14.0,
+            "Weight": 3.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 19.0,
+            "Weight": 4.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 29.0,
+            "Weight": 10.0
+          }
+        }
+      },
+      "Amber": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ccBGSSSE025_ArmorMaterialAmber",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 43.0,
+            "Weight": 8.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 13.5,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 13.5,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 18.0,
+            "Weight": 3.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 31.0,
+            "Weight": 10.0
+          }
+        }
+      },
+      "Daedric Mail": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialDaedric;IAKMaterialDaedric",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 44.0,
+            "Weight": 12.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 22.0,
+            "Weight": 5.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 14.0,
+            "Weight": 4.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 14.0,
+            "Weight": 3.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 32.0,
+            "Weight": 10.0
+          }
+        }
+      },
+      "Crusader": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Crusader",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 43.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 16.0,
+            "Weight": 7.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 16.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 21.0,
+            "Weight": 10.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 32.0,
+            "Weight": 14.0
+          }
+        }
+      }
+    }
+  },
+  "UniqueLightArmors": {
+    "Armor": {
+      "Masks Light": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "061CB9:Skyrim.esm;061CAB:Skyrim.esm;061C8B:Skyrim.esm;061CCA:Skyrim.esm",
+        "Type": "LightArmor",
+        "Armor": {
+          "Krosis": {
+            "Identifiers": "061CB9:Skyrim.esm",
+            "Rating": 21.0,
+            "Weight": 5.0
+          },
+          "Volsung": {
+            "Identifiers": "061CAB:Skyrim.esm",
+            "Rating": 21.0,
+            "Weight": 5.0
+          },
+          "Morokei": {
+            "Identifiers": "061C8B:Skyrim.esm",
+            "Rating": 5.0,
+            "Weight": 4.0
+          },
+          "Wooden Mask": {
+            "Identifiers": "061CCA:Skyrim.esm",
+            "Rating": 1.0,
+            "Weight": 2.0
+          },
+          "Rahgot": {
+            "Identifiers": "061CC0:Skyrim.esm",
+            "Rating": 17.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Old Gods": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "ArmorMaterialMS02Forsworn",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 24.0,
+            "Weight": 3.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 7.0,
+            "Weight": 1.5
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 7.0,
+            "Weight": 0.5
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 12.0,
+            "Weight": 1.0
+          }
+        }
+      },
+      "Linwe's": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "USKPArmorMaterialLinwe",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 31.0,
+            "Weight": 8.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 16.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Deathbrand": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "Deathbrand",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 39.0,
+            "Weight": 7.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 11.5,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 11.5,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 16.5,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Vampire Royal": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "Vampire Royal",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 30.0,
+            "Weight": 9.0
+          }
+        }
+      },
+      "Nightingale": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "Nightingale",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 34.0,
+            "Weight": 12.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 10.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 10.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 15.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Unique Light Armors": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "02AC61:Skyrim.esm;0EE5C0:Skyrim.esm;0C0165:Skyrim.esm;0F5981:Skyrim.esm;0A4DCD:Skyrim.esm;0F9904:Skyrim.esm;096D9B:Skyrim.esm;10559D:Skyrim.esm;037B8C:Dragonborn.esm;04D170:ccasvsse001-almsivi.esm;Gray Cowl of Nocturnal;00092B:ccbgssse041-netchleather.esl;000CCF:ccrmssse001-necrohouse.esl;011BAF:Dawnguard.esm;000805:cccbhsse001-gaunt.esl;00084C:cccbhsse001-gaunt.esl;01A755:Dawnguard.esm",
+        "Type": "LightArmor",
+        "Armor": {
+          "Savior's Hide": {
+            "Identifiers": "02AC61:Skyrim.esm",
+            "Rating": 26.0,
+            "Weight": 6.0
+          },
+          "Torture's Hood": {
+            "Identifiers": "0EE5C0:Skyrim.esm",
+            "Rating": 13.0,
+            "Weight": 0.0
+          },
+          "Tsun's Armor": {
+            "Identifiers": "0C0165:Skyrim.esm",
+            "Rating": 29.0,
+            "Weight": 0.0
+          },
+          "Tumblerbane Gloves": {
+            "Identifiers": "0F5981:Skyrim.esm",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Predator's Grace": {
+            "Identifiers": "0A4DCD:Skyrim.esm",
+            "Rating": 5.0,
+            "Weight": 1.0
+          },
+          "Diadem of the Savant": {
+            "Identifiers": "0F9904:Skyrim.esm",
+            "Rating": 7.0,
+            "Weight": 4.0
+          },
+          "Movarth's Boots": {
+            "Identifiers": "096D9B:Skyrim.esm",
+            "Rating": 5.0,
+            "Weight": 1.0
+          },
+          "Eastmarch Guard Helmet": {
+            "Identifiers": "10559D:Skyrim.esm",
+            "Rating": 12.0,
+            "Weight": 2.0
+          },
+          "Dawnguard Rune Shield": {
+            "Identifiers": "011BAF:Dawnguard.esm",
+            "Rating": 27.0,
+            "Weight": 6.0
+          },
+          "Cultist Gloves": {
+            "Identifiers": "037B8C:Dragonborn.esm",
+            "Rating": 7.0,
+            "Weight": 1.5
+          },
+          "Redoran Watchman's Helmet": {
+            "Identifiers": "04D170:ccasvsse001-almsivi.esm",
+            "Rating": 15.0,
+            "Weight": 1.0
+          },
+          "Gray Cowl of Nocturnal": {
+            "Identifiers": "Gray Cowl of Nocturnal",
+            "Rating": 13.0,
+            "Weight": 2.0
+          },
+          "Boots of Blinding Speed": {
+            "Identifiers": "00092B:ccbgssse041-netchleather.esl",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Bloodworm Helm": {
+            "Identifiers": "000CCF:ccrmssse001-necrohouse.esl",
+            "Rating": 15.0,
+            "Weight": 5.0
+          },
+          "Brawler's Leather Bracers": {
+            "Identifiers": "000805:cccbhsse001-gaunt.esl;00084C:cccbhsse001-gaunt.esl",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Reaper Bracers": {
+            "Identifiers": "01A755:Dawnguard.esm",
+            "Rating": 9.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Miraak's Mask": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "029A62:Dragonborn.esm;039D2B:Dragonborn.esm;039D2E:Dragonborn.esm;039D2F:Dragonborn.esm",
+        "Type": "LightArmor",
+        "Armor": {
+          "Miraak's Mask": {
+            "Identifiers": "029A62:Dragonborn.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Miraak's Mask lvl 1": {
+            "Identifiers": "039D2B:Dragonborn.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Miraak's Mask lvl 2": {
+            "Identifiers": "039D2E:Dragonborn.esm",
+            "Rating": 25.0,
+            "Weight": 9.0
+          },
+          "Miraak's Mask lvl 3": {
+            "Identifiers": "039D2F:Dragonborn.esm",
+            "Rating": 27.0,
+            "Weight": 9.0
+          }
+        }
+      },
+      "Amulet of Articulation": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "09DFF7:Skyrim.esm;0F6904:Skyrim.esm;0F690D:Skyrim.esm;0F690E:Skyrim.esm;0F690F:Skyrim.esm;0F6910:Skyrim.esm;0F6911:Skyrim.esm",
+        "Type": "LightArmor",
+        "Armor": {
+          "Amulet of Articulation 1": {
+            "Identifiers": "09DFF7:Skyrim.esm",
+            "Rating": 2.0,
+            "Weight": 1.0
+          },
+          "Amulet of Articulation 2": {
+            "Identifiers": "0F6904:Skyrim.esm",
+            "Rating": 3.0,
+            "Weight": 1.0
+          },
+          "Amulet of Articulation 3": {
+            "Identifiers": "0F690D:Skyrim.esm",
+            "Rating": 4.0,
+            "Weight": 1.0
+          },
+          "Amulet of Articulation 4": {
+            "Identifiers": "0F690E:Skyrim.esm",
+            "Rating": 5.0,
+            "Weight": 1.0
+          },
+          "Amulet of Articulation 5": {
+            "Identifiers": "0F690F:Skyrim.esm",
+            "Rating": 6.0,
+            "Weight": 1.0
+          },
+          "Amulet of Articulation 6": {
+            "Identifiers": "0F6910:Skyrim.esm",
+            "Rating": 7.0,
+            "Weight": 1.0
+          },
+          "Amulet of Articulation 7": {
+            "Identifiers": "0F6911:Skyrim.esm",
+            "Rating": 8.0,
+            "Weight": 1.0
+          }
+        }
+      }
+    }
+  },
+  "OtherLightArmors": {
+    "Armor": {
+      "Light Iron": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialIron;IAKMaterialIron",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 26.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 6.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 6.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 19.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Light Steel": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialSteel;IAKMaterialSteel;IAKMaterialSteelChain",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 27.0,
+            "Weight": 8.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 12.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 20.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Light Stalhrim": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialEbony;IAKMaterialEbony;Ebony",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 37.0,
+            "Weight": 7.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 10.5,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 10.5,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 15.5,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 27.5,
+            "Weight": 10.0
+          }
+        }
+      },
+      "Immersive Armors": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "02146C:Hothtrooper44_ArmorCompilation.esp;021467:Hothtrooper44_ArmorCompilation.esp;021465:Hothtrooper44_ArmorCompilation.esp;021466:Hothtrooper44_ArmorCompilation.esp;02146A:Hothtrooper44_ArmorCompilation.esp;021462:Hothtrooper44_ArmorCompilation.esp;021468:Hothtrooper44_ArmorCompilation.esp;021464:Hothtrooper44_ArmorCompilation.esp;021463:Hothtrooper44_ArmorCompilation.esp;021461:Hothtrooper44_ArmorCompilation.esp;021460:Hothtrooper44_ArmorCompilation.esp;021469:Hothtrooper44_ArmorCompilation.esp;02146B:Hothtrooper44_ArmorCompilation.esp;",
+        "Type": "LightArmor",
+        "Armor": {
+          "Hide Buckler": {
+            "Identifiers": "021465:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 10.0,
+            "Weight": 2.0
+          },
+          "Iron Buckler": {
+            "Identifiers": "021467:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 12.0,
+            "Weight": 4.0
+          },
+          "Imperial Buckler": {
+            "Identifiers": "021466:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 13.5,
+            "Weight": 5.0
+          },
+          "Steel Buckler": {
+            "Identifiers": "02146A:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 15.0,
+            "Weight": 5.0
+          },
+          "Dwarven Buckler": {
+            "Identifiers": "021462:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 16.5,
+            "Weight": 6.0
+          },
+          "Orcish Buckler": {
+            "Identifiers": "021468:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 18.0,
+            "Weight": 6.0
+          },
+          "Buckler of Ysgramor": {
+            "Identifiers": "02146C:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 18.0,
+            "Weight": 6.0
+          },
+          "Sithis Buckler": {
+            "Identifiers": "021469:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 19.0,
+            "Weight": 5.0
+          },
+          "Winterhold Battlemage Buckler": {
+            "Identifiers": "02146B:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 19.0,
+            "Weight": 5.0
+          },
+          "Glass Buckler": {
+            "Identifiers": "021464:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 19.5,
+            "Weight": 4.0
+          },
+          "Ebony Buckler": {
+            "Identifiers": "021463:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 21.0,
+            "Weight": 7.0
+          },
+          "Dragonhide Buckler": {
+            "Identifiers": "021461:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 22.5,
+            "Weight": 7.0
+          },
+          "Daedric Buckler": {
+            "Identifiers": "021460:Hothtrooper44_ArmorCompilation.esp",
+            "Rating": 24.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Moon Monk's": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Moon Monk's;Ra'kazra's",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 38.0,
+            "Weight": 10.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 16.0,
+            "Weight": 3.0
+          }
+        }
+      },
+      "Khajiit Will Follow": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "51187E:KhajiitWillFollow.esp",
+        "Type": "LightArmor",
+        "Armor": {
+          "Ascension": {
+            "Identifiers": "51187E:KhajiitWillFollow.esp",
+            "Rating": 39.0,
+            "Weight": 7.0
+          }
+        }
+      },
+      "Gray Fox Cowl": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "018B4B:Gray Fox Cowl.esm",
+        "Type": "LightArmor",
+        "Armor": {
+          "Boots of Springheel Jak": {
+            "Identifiers": "018B4B:Gray Fox Cowl.esm",
+            "Rating": 0.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Midwood Isle": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "19D1CE:Midwood Isle.esp",
+        "Type": "LightArmor",
+        "Armor": {
+          "Nahvaal": {
+            "Identifiers": "19D1CE:Midwood Isle.esp",
+            "Rating": 21.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Skyrim Extended Cut - Saints and Seducers": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "2F68C7:Skyrim Extended Cut - Saints and Seducers.esp",
+        "Type": "LightArmor",
+        "Armor": {
+          "Grummite Light Shield": {
+            "Identifiers": "2F68C7:Skyrim Extended Cut - Saints and Seducers.esp",
+            "Rating": 17.0,
+            "Weight": 9.0
+          }
+        }
+      },
+      "Beyond Bruma": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "6026FF:BSAssets.esm",
+        "Type": "LightArmor",
+        "Armor": {
+          "Ayleid Lich Helmet": {
+            "Identifiers": "6026FF:BSAssets.esm",
+            "Rating": 21.0,
+            "Weight": 5.0
+          }
+        }
+      }
+    }
+  },
+  "VanillaHeavyArmors": {
+    "Armor": {
+      "Guard": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Guard's",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 25.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 10.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 10.0,
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 15.0,
+            "Weight": 5.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 17.0,
+            "Weight": 3.0
+          }
+        }
+      },
+      "Imperial": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialImperialHeavy",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 25.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 10.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 10.0,
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 15.0,
+            "Weight": 5.0
+          },
+          "Helmet Full": {
+            "Identifiers": "09610D:Skyrim.esm",
+            "Rating": 18.0,
+            "Weight": 5.0
+          },
+          "Officer's Helmet": {
+            "Identifiers": "0136CF:Skyrim.esm",
+            "Rating": 17.0,
+            "Weight": 4.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 20.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Iron": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialIron;IAKMaterialIron",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 25.0,
+            "Weight": 30.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 10.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 10.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 15.0,
+            "Weight": 5.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 20.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Ancient Nord": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Ancient Nord",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 25.0,
+            "Weight": 28.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 10.0,
+            "Weight": 5.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 10.0,
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 15.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Banded Iron": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Banded Iron",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 28.0,
+            "Weight": 35.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 22.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Wolf": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Wolf;Armored Fur",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 31.0,
+            "Weight": 20.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 12.0,
+            "Weight": 4.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 12.0,
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 17.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Falmer": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "DLC1ArmorMaterielFalmerHeavyOriginal",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 31.0,
+            "Weight": 20.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 12.0,
+            "Weight": 4.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 12.0,
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 10.0,
+            "Weight": 5.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 28.0,
+            "Weight": 15.0
+          }
+        }
+      },
+      "Steel": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialSteel;IAKMaterialSteel",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 31.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 12.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 12.0,
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 17.0,
+            "Weight": 5.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 24.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Dwarven": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialDwarven;IAKMaterialDwarven",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 34.0,
+            "Weight": 45.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 13.0,
+            "Weight": 10.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 13.0,
+            "Weight": 8.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 18.0,
+            "Weight": 12.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 26.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Dwarven Plate": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Dwarven Plate",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 35.0,
+            "Weight": 45.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 14.0,
+            "Weight": 10.0
+          }
+        }
+      },
+      "Orcish": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialOrcish;IAKMaterialOrcish",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 40.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 15.0,
+            "Weight": 7.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 15.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 20.0,
+            "Weight": 8.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 30.0,
+            "Weight": 14.0
+          }
+        }
+      },
+      "Steel Plate": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialSteelPlate;IAKMaterialAdvancedPlate",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 40.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 14.0,
+            "Weight": 9.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 14.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 19.0,
+            "Weight": 6.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 29.0,
+            "Weight": 14.0
+          }
+        }
+      },
+      "Ebony": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialEbony;IAKMaterialEbony;Ebony",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 43.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 16.0,
+            "Weight": 7.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 16.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 21.0,
+            "Weight": 10.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 32.0,
+            "Weight": 14.0
+          }
+        }
+      },
+      "Blades": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialBlades;Blades",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 34.0,
+            "Weight": 45.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 13.0,
+            "Weight": 10.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 13.0,
+            "Weight": 8.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 18.0,
+            "Weight": 12.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 26.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Dragonplate": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialDragonplate;IAKMaterialDragonPlate",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 46.0,
+            "Weight": 40.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 17.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 17.0,
+            "Weight": 8.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 22.0,
+            "Weight": 8.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 34.0,
+            "Weight": 15.0
+          }
+        }
+      },
+      "Daedric": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ArmorMaterialDaedric;IAKMaterialDaedric",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 49.0,
+            "Weight": 50.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 18.0,
+            "Weight": 10.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 18.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 23.0,
+            "Weight": 15.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 36.0,
+            "Weight": 15.0
+          }
+        }
+      }
+    }
+  },
+  "DawnguardHeavyArmors": {
+    "Armor": {
+      "Dawnguard": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Dawnguard Heavy;Dawnguard Full;Dawnguard Shield",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 34.0,
+            "Weight": 42.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 13.0,
+            "Weight": 9.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 13.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 18.0,
+            "Weight": 10.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 26.0,
+            "Weight": 10.0
+          }
+        }
+      },
+      "Falmer Hardened": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "DLC1ArmorMaterialFalmerHardened",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 34.0,
+            "Weight": 40.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 13.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 13.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 18.0,
+            "Weight": 10.0
+          }
+        }
+      },
+      "Falmer Heavy": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "DLC1ArmorMaterielFalmerHeavy",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 43.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 16.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 16.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 21.0,
+            "Weight": 8.0
+          }
+        }
+      }
+    }
+  },
+  "DragonbornHeavyArmors": {
+    "Armor": {
+      "Bonemold": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "DLC2ArmorMaterialBonemoldHeavy",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 32.0,
+            "Weight": 34.0
+          },
+          "Pauldron Armor": {
+            "Identifiers": "Pauldron Armor",
+            "Rating": 33.0,
+            "Weight": 36.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 12.0,
+            "Weight": 7.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 12.0,
+            "Weight": 3.5
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 17.0,
+            "Weight": 4.5
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 21.5,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Improved Bonemold": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Improved Bonemold",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 35.0,
+            "Weight": 43.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 13.0,
+            "Weight": 9.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 13.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 18.0,
+            "Weight": 11.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 26.0,
+            "Weight": 11.0
+          }
+        }
+      },
+      "Chitin Heavy": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "DLC2ArmorMaterialChitinHeavy;WAF_MaterialChitin",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 40.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 14.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 14.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 19.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Nordic Carved": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "DLC2ArmorMaterialNordicHeavy",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 43.0,
+            "Weight": 37.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 15.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 15.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 20.0,
+            "Weight": 7.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 26.5,
+            "Weight": 10.0
+          }
+        }
+      },
+      "Stalhrim Heavy": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "DLC2ArmorMaterialStalhrimHeavy",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 46.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 17.0,
+            "Weight": 7.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 17.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 22.0,
+            "Weight": 7.0
+          }
+        }
+      }
+    }
+  },
+  "CreationClubHeavyArmors": {
+    "Armor": {
+      "Iron Plate": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Iron Plate",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 27.0,
+            "Weight": 31.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 11.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 11.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 16.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Iron Spell Knight": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Iron Spell Knight",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 29.0,
+            "Weight": 30.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 14.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 14.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 19.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Steel Soldier": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Steel Soldier;Blades Steel",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 32.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 13.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 13.0,
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 18.0,
+            "Weight": 5.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 26.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Steel Spell Knight": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Steel Spell Knight",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 35.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 16.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 16.0,
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 21.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Indoril": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Indoril",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 40.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 14.0,
+            "Weight": 9.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 14.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 19.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Vigil/Vigilant": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Vigil;Vigilant;Silver Hand",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 40.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 14.0,
+            "Weight": 9.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 14.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 19.0,
+            "Weight": 6.0
+          },
+          "Open Helmet": {
+            "Identifiers": "Open Helmet",
+            "Rating": 17.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Orcish Plate": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Orcish Plate",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 41.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 16.0,
+            "Weight": 7.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 16.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 20.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Golden Saint": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ccBGSSSE025_ArmorMaterialGolden",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 42.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 15.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 15.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 20.0,
+            "Weight": 5.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 26.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Silver": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Silver",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 42.0,
+            "Weight": 40.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 15.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 15.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 20.0,
+            "Weight": 7.0
+          }
+        }
+      },
+      "Her Hand/High Indoril": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Her Hand;High Indoril",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 43.0,
+            "Weight": 36.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 16.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 16.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 21.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Ebony Plate": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Ebony Plate;Blades Ebony",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 44.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 17.0,
+            "Weight": 7.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 17.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 22.0,
+            "Weight": 10.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 34.0,
+            "Weight": 14.0
+          }
+        }
+      },
+      "Ebony Spell Knight": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Ebony Spell Knight",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 47.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 20.0,
+            "Weight": 7.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 20.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 25.0,
+            "Weight": 10.0
+          }
+        }
+      },
+      "Dragonplate Insulated": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Dragonplate Insulated",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 48.0,
+            "Weight": 40.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 19.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 19.0,
+            "Weight": 8.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 24.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Dragonbone Mail": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Dragonbone Mail",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 48.0,
+            "Weight": 50.0
+          }
+        }
+      },
+      "Stalhrim Fur": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Stalhrim Fur",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 48.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 19.0,
+            "Weight": 7.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 19.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 24.0,
+            "Weight": 7.0
+          }
+        }
+      },
+      "Imperial Dragon": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Imperial Dragon",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 49.0,
+            "Weight": 50.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 18.0,
+            "Weight": 10.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 18.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 23.0,
+            "Weight": 15.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 36.0,
+            "Weight": 15.0
+          }
+        }
+      },
+      "Storm-Bear": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Storm-Bear",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 49.0,
+            "Weight": 50.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 18.0,
+            "Weight": 10.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 18.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 23.0,
+            "Weight": 15.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 36.0,
+            "Weight": 15.0
+          }
+        }
+      },
+      "Daedric Plate": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Daedric Plate",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 51.0,
+            "Weight": 50.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 25.0,
+            "Weight": 15.0
+          }
+        }
+      },
+      "Madness": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "ccBGSSSE025_ArmorMaterialMadness",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 52.0,
+            "Weight": 52.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 19.0,
+            "Weight": 11.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 19.0,
+            "Weight": 8.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 24.0,
+            "Weight": 17.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 38.0,
+            "Weight": 16.0
+          }
+        }
+      }
+    }
+  },
+  "UniqueHeavyArmors": {
+    "Armor": {
+      "Unique Heavy Armors": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "052794:Skyrim.esm;045F96:Skyrim.esm;0FC5BF:Skyrim.esm;0295F3:Skyrim.esm;0E41D8:Skyrim.esm;05CBFE:Skyrim.esm;03521F:Skyrim.esm;0D2846:Skyrim.esm;0DA750:Skyrim.esm;03399C:Dragonborn.esm;037B88:Dragonborn.esm;038ADD:Dragonborn.esm;15E949:ccasvsse001-almsivi.esm;06668E:ccasvsse001-almsivi.esm;000D63:ccbgssse008-wraithguard.esl;Lord's Mail;000867:ccbgssse059-ba_dragonplate.esl;000813:ccbgssse069-contest.esl;000899:cckrtsse001_altar.esl;000CDC:cckrtsse001_altar.esl;000D3D:ccrmssse001-necrohouse.esl;000893:cctwbsse001-puzzledungeon.esm;000886:ccvsvsse003-necroarts.esl;012E8A:Dawnguard.esm;00284D:Dawnguard.esm;005759:Dawnguard.esm;",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Ebony Mail": {
+            "Identifiers": "052794:Skyrim.esm",
+            "Rating": 45.0,
+            "Weight": 28.0
+          },
+          "Spellbreaker": {
+            "Identifiers": "045F96:Skyrim.esm",
+            "Rating": 38.0,
+            "Weight": 12.0
+          },
+          "Targe of the Blooded": {
+            "Identifiers": "0FC5BF:Skyrim.esm",
+            "Rating": 20.0,
+            "Weight": 8.0
+          },
+          "Helm of Yngol": {
+            "Identifiers": "0295F3:Skyrim.esm",
+            "Rating": 21.0,
+            "Weight": 8.0
+          },
+          "Shield of Ysgramor": {
+            "Identifiers": "0E41D8:Skyrim.esm",
+            "Rating": 30.0,
+            "Weight": 12.0
+          },
+          "General Tullius' Armor": {
+            "Identifiers": "05CBFE:Skyrim.esm",
+            "Rating": 31.0,
+            "Weight": 18.0
+          },
+          "Family Shield": {
+            "Identifiers": "03521F:Skyrim.esm",
+            "Rating": 20.0,
+            "Weight": 10.0
+          },
+          "Masque of Clavicus Vile": {
+            "Identifiers": "0D2846:Skyrim.esm",
+            "Rating": 23.0,
+            "Weight": 7.0
+          },
+          "Jagged Crown": {
+            "Identifiers": "0DA750:Skyrim.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Shellbug Helmet": {
+            "Identifiers": "012E8A:Dawnguard.esm",
+            "Rating": 22.0,
+            "Weight": 6.0
+          },
+          "Dented Iron Shield": {
+            "Identifiers": "03399C:Dragonborn.esm",
+            "Rating": 15.0,
+            "Weight": 12.0
+          },
+          "Cultist Mask": {
+            "Identifiers": "037B88:Dragonborn.esm",
+            "Rating": 17.0,
+            "Weight": 5.0
+          },
+          "Visage of Mzund": {
+            "Identifiers": "038ADD:Dragonborn.esm",
+            "Rating": 24.0,
+            "Weight": 12.0
+          },
+          "Kenro's Helmet": {
+            "Identifiers": "15E949:ccasvsse001-almsivi.esm",
+            "Rating": 19.0,
+            "Weight": 6.0
+          },
+          "Ordinator Shield": {
+            "Identifiers": "06668E:ccasvsse001-almsivi.esm",
+            "Rating": 26.0,
+            "Weight": 8.0
+          },
+          "Wraithguard": {
+            "Identifiers": "000D63:ccbgssse008-wraithguard.esl",
+            "Rating": 19.0,
+            "Weight": 8.0
+          },
+          "Lord's Mail": {
+            "Identifiers": "Lord's Mail",
+            "Rating": 45.0,
+            "Weight": 32.0
+          },
+          "Dismal Visage": {
+            "Identifiers": "000867:ccbgssse059-ba_dragonplate.esl",
+            "Rating": 12.0,
+            "Weight": 5.0
+          },
+          "Fists of Randagulf": {
+            "Identifiers": "000813:ccbgssse069-contest.esl",
+            "Rating": 15.0,
+            "Weight": 8.0
+          },
+          "Skull-Sabre Shield": {
+            "Identifiers": "000899:cckrtsse001_altar.esl",
+            "Rating": 28.0,
+            "Weight": 10.0
+          },
+          "Grand Champion's Helm": {
+            "Identifiers": "000CDC:cckrtsse001_altar.esl",
+            "Rating": 20.0,
+            "Weight": 6.0
+          },
+          "Helm of Oreyn Bearclaw": {
+            "Identifiers": "000D3D:ccrmssse001-necrohouse.esl",
+            "Rating": 22.0,
+            "Weight": 8.0
+          },
+          "Ward of the Seasons": {
+            "Identifiers": "000893:cctwbsse001-puzzledungeon.esm",
+            "Rating": 34.0,
+            "Weight": 45.0
+          },
+          "Undying Ghost Helmet": {
+            "Identifiers": "000886:ccvsvsse003-necroarts.esl",
+            "Rating": 21.0,
+            "Weight": 8.0
+          },
+          "Auriel's Shield": {
+            "Identifiers": "00284D:Dawnguard.esm",
+            "Rating": 32.0,
+            "Weight": 14.0
+          },
+          "Aetherial Shield": {
+            "Identifiers": "005759:Dawnguard.esm",
+            "Rating": 26.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Masks Heavy": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "061CA5:Skyrim.esm;061CC1:Skyrim.esm;061CC2:Skyrim.esm;061CC0:Skyrim.esm;061CC9:Skyrim.esm;061CD6:Skyrim.esm;0240FE:Dragonborn.esm;0240FF:Dragonborn.esm;024037:Dragonborn.esm;00081F:ccasvsse001-almsivi.esm;000821:ccasvsse001-almsivi.esm;000820:ccasvsse001-almsivi.esm;000822::ccasvsse001-almsivi.esm",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Nahkriin": {
+            "Identifiers": "061CA5:Skyrim.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Hevnoraak": {
+            "Identifiers": "061CC1:Skyrim.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Otar": {
+            "Identifiers": "061CC2:Skyrim.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Rahgot": {
+            "Identifiers": "061CC0:Skyrim.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Vokun": {
+            "Identifiers": "061CC9:Skyrim.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Konahrik": {
+            "Identifiers": "061CD6:Skyrim.esm",
+            "Rating": 24.0,
+            "Weight": 7.0
+          },
+          "Ahzidal": {
+            "Identifiers": "0240FE:Dragonborn.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Dukaan": {
+            "Identifiers": "0240FF:Dragonborn.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Zahkriisos": {
+            "Identifiers": "024037:Dragonborn.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Almalexia": {
+            "Identifiers": "00081F:ccasvsse001-almsivi.esm",
+            "Rating": 19.0,
+            "Weight": 6.0
+          },
+          "Dagoth Ur": {
+            "Identifiers": "000821:ccasvsse001-almsivi.esm",
+            "Rating": 19.0,
+            "Weight": 6.0
+          },
+          "Sotha Sil": {
+            "Identifiers": "000820:ccasvsse001-almsivi.esm",
+            "Rating": 19.0,
+            "Weight": 6.0
+          },
+          "Vivec": {
+            "Identifiers": "000822:ccasvsse001-almsivi.esm",
+            "Rating": 19.0,
+            "Weight": 0.0
+          },
+          "Volsung": {
+            "Identifiers": "061CAB:Skyrim.esm",
+            "Rating": 23.0,
+            "Weight": 17.0
+          }
+        }
+      },
+      "Miraak's Mask": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "029A62:Dragonborn.esm;039FA1:Dragonborn.esm;039FA2:Dragonborn.esm;039FA3:Dragonborn.esm",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Miraak's Mask": {
+            "Identifiers": "029A62:Dragonborn.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Miraak's Mask lvl 1": {
+            "Identifiers": "039FA1:Dragonborn.esm",
+            "Rating": 23.0,
+            "Weight": 9.0
+          },
+          "Miraak's Mask lvl 2": {
+            "Identifiers": "039FA2:Dragonborn.esm",
+            "Rating": 25.0,
+            "Weight": 9.0
+          },
+          "Miraak's Mask lvl 3": {
+            "Identifiers": "039FA3:Dragonborn.esm",
+            "Rating": 27.0,
+            "Weight": 9.0
+          }
+        }
+      },
+      "Shield of Solitude": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "09E023:Skyrim.esm;10EB62:Skyrim.esm;10EB64:Skyrim.esm;10EB63:Skyrim.esm;10EB65:Skyrim.esm",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Shield of Solitude lvl 12": {
+            "Identifiers": "09E023:Skyrim.esm",
+            "Rating": 26.0,
+            "Weight": 12.0
+          },
+          "Shield of Solitude lvl 18": {
+            "Identifiers": "10EB62:Skyrim.esm",
+            "Rating": 27.0,
+            "Weight": 12.0
+          },
+          "Shield of Solitude lvl 25": {
+            "Identifiers": "10EB64:Skyrim.esm",
+            "Rating": 28.0,
+            "Weight": 12.0
+          },
+          "Shield of Solitude lvl 32": {
+            "Identifiers": "10EB63:Skyrim.esm",
+            "Rating": 30.0,
+            "Weight": 12.0
+          },
+          "Shield of Solitude lvl 40": {
+            "Identifiers": "10EB65:Skyrim.esm",
+            "Rating": 32.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Dwarven Crown": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "00089E:cctwbsse001-puzzledungeon.esm;000892:cctwbsse001-puzzledungeon.esm;00088F:cctwbsse001-puzzledungeon.esm;00089F:cctwbsse001-puzzledungeon.esm",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Dwarven Crown": {
+            "Identifiers": "00089E:cctwbsse001-puzzledungeon.esm",
+            "Rating": 16.0,
+            "Weight": 9.0
+          },
+          "Dwarven Crown of Spring": {
+            "Identifiers": "000892:cctwbsse001-puzzledungeon.esm",
+            "Rating": 22.0,
+            "Weight": 12.0
+          },
+          "Dwarven Crown of Autumn": {
+            "Identifiers": "00088F:cctwbsse001-puzzledungeon.esm",
+            "Rating": 22.0,
+            "Weight": 12.0
+          },
+          "Dwarven Crown of Winter": {
+            "Identifiers": "00089F:cctwbsse001-puzzledungeon.esm",
+            "Rating": 22.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Dwarven Visage": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "000894:cctwbsse001-puzzledungeon.esm;000890:cctwbsse001-puzzledungeon.esm;000895:cctwbsse001-puzzledungeon.esm",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Dwarven Spring Visage": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 8.0,
+            "Weight": 5.0
+          }
+        }
+      }
+    }
+  },
+  "OtherHeavyArmors": {
+    "Armor": {
+      "Morag Tong": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "DLC2ArmorMaterialMoragTong",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 40.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 14.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 14.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 19.0,
+            "Weight": 5.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 26.0,
+            "Weight": 10.0
+          }
+        }
+      },
+      "Khajiit Will Follow": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "50C777:KhajiitWillFollow.esp",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Absolution": {
+            "Identifiers": "50C777:KhajiitWillFollow.esp",
+            "Rating": 46.0,
+            "Weight": 38.0
+          }
+        }
+      },
+      "Skyrim Extended Cut - Saints and Seducers": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "02E7D2:Skyrim Extended Cut - Saints and Seducers.esp",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Cast Iron Hat": {
+            "Identifiers": "02E7D2:Skyrim Extended Cut - Saints and Seducers.esp",
+            "Rating": 10.0,
+            "Weight": 3.0
+          }
+        }
+      }
+    }
+  },
+  "ClothingArmors": {
+    "Armor": {}
+  }
+}

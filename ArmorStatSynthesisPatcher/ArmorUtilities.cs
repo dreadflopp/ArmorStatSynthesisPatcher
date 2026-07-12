@@ -27,55 +27,6 @@ namespace ArmourStatsSynthesisPatcher
 
     public static class ArmorUtilities
     {
-        public static bool HasKeyword(IArmorGetter armor, string keyword, ILinkCache linkCache)
-        {
-            return armor.Keywords?.Any(k =>
-            {
-                if (k.TryResolve(linkCache, out var keywordRecord))
-                {
-                    return keywordRecord.EditorID == keyword;
-                }
-                return false;
-            }) ?? false;
-        }
-
-        public static void PrintProperties(object obj, int indent = 0, int maxDepth = 2)
-        {
-            if (obj == null || indent > maxDepth) return;
-            var type = obj.GetType();
-            var indentStr = new string(' ', indent * 2);
-            foreach (var prop in type.GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance))
-            {
-                object? value = null;
-                try { value = prop.GetValue(obj); } catch { value = "<unreadable>"; }
-                if (value == null)
-                {
-                    Console.WriteLine($"{indentStr}{prop.Name}: null");
-                }
-                else if (prop.PropertyType.IsPrimitive || prop.PropertyType == typeof(string) || prop.PropertyType.IsEnum)
-                {
-                    Console.WriteLine($"{indentStr}{prop.Name}: {value}");
-                }
-                else if (typeof(System.Collections.IEnumerable).IsAssignableFrom(prop.PropertyType) && prop.PropertyType != typeof(string))
-                {
-                    Console.WriteLine($"{indentStr}{prop.Name}: [");
-                    var enumerable = value as System.Collections.IEnumerable;
-                    int count = 0;
-                    foreach (var item in enumerable!)
-                    {
-                        if (count++ > 5) { Console.WriteLine($"{indentStr}  ..."); break; }
-                        PrintProperties(item, indent + 2, maxDepth);
-                    }
-                    Console.WriteLine($"{indentStr}]");
-                }
-                else
-                {
-                    Console.WriteLine($"{indentStr}{prop.Name}:");
-                    PrintProperties(value, indent + 1, maxDepth);
-                }
-            }
-        }
-
         /// <summary>
         /// Validates a form key string and checks if it points to an armor record.
         /// </summary>
