@@ -46,7 +46,7 @@ namespace ArmourStatsSynthesisPatcher
 
         private static void EnsureOptionalPresetExists(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
         {
-            const string presetFileName = "settings.nerfed.json";
+            const string presetFileName = "settings_original_cc.json";
 
             try
             {
@@ -224,37 +224,28 @@ namespace ArmourStatsSynthesisPatcher
                 return GetKeywordMatches(armor, patterns, linkCache);
             }
 
-            private List<ArmorPiece> GetMatchingArmorPieces(
+            private ArmorPiece? GetBestMatchingArmorPiece(
                 IArmorGetter armor,
                 IEnumerable<(string Identifier, ArmorPiece Result)> patterns,
                 ILinkCache linkCache)
             {
-                var matches = new List<ArmorPiece>();
-
                 var formIdMatches = GetFormIdMatches(armor, patterns);
-                foreach (var piece in formIdMatches)
+                if (formIdMatches.Count > 0)
                 {
-                    if (!matches.Contains(piece))
-                    {
-                        matches.Add(piece);
-                    }
+                    return formIdMatches
+                        .OrderByDescending(piece => piece.Rating)
+                        .First();
                 }
 
                 var nameMatch = GetFirstNameMatch(armor, patterns);
-                if (nameMatch != null && !matches.Contains(nameMatch))
+                if (nameMatch != null)
                 {
-                    matches.Add(nameMatch);
+                    return nameMatch;
                 }
 
-                foreach (var piece in GetKeywordMatches(armor, patterns, linkCache))
-                {
-                    if (!matches.Contains(piece))
-                    {
-                        matches.Add(piece);
-                    }
-                }
-
-                return matches;
+                return GetKeywordMatches(armor, patterns, linkCache)
+                    .OrderByDescending(piece => piece.Rating)
+                    .FirstOrDefault();
             }
 
             public (bool TypeMatched, bool PieceMatched, ArmorType? Type, ArmorPiece? Piece) TryMatch(IArmorGetter armor, ILinkCache linkCache, IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
@@ -307,23 +298,20 @@ namespace ArmourStatsSynthesisPatcher
                         DebugLog($"    Weight: {piece.Result.Weight}");
                     }
 
-                    var matchingPieces = GetMatchingArmorPieces(armor, pieces, linkCache);
+                    var matchingPiece = GetBestMatchingArmorPiece(armor, pieces, linkCache);
 
                     // If there's only one piece in the armor type and it has the same identifier as the armor type,
                     // we can include that piece directly as a candidate
-                    if (!matchingPieces.Any() && pieces.Count == 1 && pieces[0].Identifier.Equals(armorType.Identifiers, StringComparison.OrdinalIgnoreCase))
+                    if (matchingPiece == null && pieces.Count == 1 && pieces[0].Identifier.Equals(armorType.Identifiers, StringComparison.OrdinalIgnoreCase))
                     {
-                        matchingPieces.Add(pieces[0].Result);
+                        matchingPiece = pieces[0].Result;
                     }
 
-                    foreach (var candidatePiece in matchingPieces)
+                    if (matchingPiece != null && matchingPiece.Rating > bestRating)
                     {
-                        if (candidatePiece.Rating > bestRating)
-                        {
-                            bestRating = candidatePiece.Rating;
-                            bestArmorType = armorType;
-                            bestArmorPiece = candidatePiece;
-                        }
+                        bestRating = matchingPiece.Rating;
+                        bestArmorType = armorType;
+                        bestArmorPiece = matchingPiece;
                     }
                 }
 
