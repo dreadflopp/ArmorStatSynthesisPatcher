@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Armour Stats Synthesis Patcher.sln",
+                "${workspaceFolder}/Armor Stat Synthesis Patcher.sln",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -19,7 +19,9 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Armour Stats Synthesis Patcher.sln",
+                "${workspaceFolder}/Armor Stat Synthesis Patcher.sln",
+                "-r",
+                "win-x64",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -33,7 +35,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/Armour Stats Synthesis Patcher.sln"
+                "${workspaceFolder}/Armor Stat Synthesis Patcher.sln"
             ],
             "problemMatcher": "$msCompile"
         }
