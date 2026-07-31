@@ -871,7 +871,7 @@
     "Armor": {
       "Dwarven Mail": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "ArmorMaterialDwarven;IAKMaterialDwarven",
+        "Identifiers": "ArmorMaterialDwarven;IAKMaterialDwarven;Dwarven",
         "Type": "LightArmor",
         "Armor": {
           "Armor": {

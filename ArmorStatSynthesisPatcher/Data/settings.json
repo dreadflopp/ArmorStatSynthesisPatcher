@@ -871,7 +871,7 @@
     "Armor": {
       "Dwarven Mail": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "ArmorMaterialDwarven;IAKMaterialDwarven",
+        "Identifiers": "ArmorMaterialDwarven;IAKMaterialDwarven;Dwarven",
         "Type": "LightArmor",
         "Armor": {
           "Armor": {
@@ -1237,12 +1237,12 @@
           },
           "Boots": {
             "Identifiers": "ArmorBoots",
-            "Rating": 13.5,
+            "Rating": 13.0,
             "Weight": 2.0
           },
           "Gauntlets": {
             "Identifiers": "ArmorGauntlets",
-            "Rating": 13.5,
+            "Rating": 13.0,
             "Weight": 2.0
           },
           "Helmet": {
@@ -1451,7 +1451,7 @@
         }
       },
       "Nightingale": {
-        "MatchBehavior": "Pass",
+        "MatchBehavior": "Pass",        
         "Identifiers": "Nightingale",
         "Type": "LightArmor",
         "Armor": {
@@ -3330,8 +3330,8 @@
           },
           "Shield": {
             "Identifiers": "ArmorShield",
-            "Rating": 38.0,
-            "Weight": 16.0
+            "Rating": 36.0,
+            "Weight": 15.0
           }
         }
       },
@@ -3540,23 +3540,23 @@
           },
           "Almalexia": {
             "Identifiers": "00081F:ccasvsse001-almsivi.esm",
-            "Rating": 19.0,
-            "Weight": 6.0
+            "Rating": 21.0,
+            "Weight": 10.0
           },
           "Dagoth Ur": {
             "Identifiers": "000821:ccasvsse001-almsivi.esm",
-            "Rating": 19.0,
-            "Weight": 6.0
+            "Rating": 21.0,
+            "Weight": 10.0
           },
           "Sotha Sil": {
             "Identifiers": "000820:ccasvsse001-almsivi.esm",
-            "Rating": 19.0,
-            "Weight": 6.0
+            "Rating": 21.0,
+            "Weight": 10.0
           },
           "Vivec": {
             "Identifiers": "000822:ccasvsse001-almsivi.esm",
-            "Rating": 19.0,
-            "Weight": 0.0
+            "Rating": 21.0,
+            "Weight": 10.0
           },
           "Volsung": {
             "Identifiers": "061CAB:Skyrim.esm",
