@@ -957,8 +957,7 @@
             "Identifiers": "Tower Shield",
             "Rating": 24.5,
             "Weight": 8.0
-          }
-          ,
+          },
           "Shield": {
             "Identifiers": "Shield",
             "Rating": 19.0,
@@ -1003,7 +1002,6 @@
           }
         }
       },
-      
       "Boiled Netch Leather": {
         "MatchBehavior": "ModifyArmor",
         "Identifiers": "Boiled Netch Leather",
@@ -1320,6 +1318,38 @@
             "Weight": 14.0
           }
         }
+      },
+      "Storm-Bear": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Storm-Bear",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 32.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 9.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 9.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 14.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 21.0,
+            "Weight": 4.0
+          }
+        }
       }
     }
   },
@@ -1451,7 +1481,7 @@
         }
       },
       "Nightingale": {
-        "MatchBehavior": "Pass",        
+        "MatchBehavior": "Pass",
         "Identifiers": "Nightingale",
         "Type": "LightArmor",
         "Armor": {
@@ -2898,7 +2928,8 @@
             "Weight": 5.0
           }
         }
-      },"Vigil Corrupted/Corrupted Vigilant": {
+      },
+      "Vigil Corrupted/Corrupted Vigilant": {
         "MatchBehavior": "ModifyArmor",
         "Identifiers": "Vigil Corrupted;Corrupted Vigilant",
         "Type": "HeavyArmor",
@@ -2930,7 +2961,7 @@
           }
         }
       },
-       "Vigil Enforcer/Vigilant": {
+      "Vigil Enforcer/Vigilant": {
         "MatchBehavior": "ModifyArmor",
         "Identifiers": "Vigil Enforcer;Vigilant",
         "Type": "HeavyArmor",
@@ -3261,28 +3292,28 @@
         "Armor": {
           "Armor": {
             "Identifiers": "ArmorCuirass",
-            "Rating": 14.0,
-            "Weight": 2.0
+            "Rating": 40.0,
+            "Weight": 35.0
           },
           "Boots": {
             "Identifiers": "ArmorBoots",
-            "Rating": 9.0,
-            "Weight": 2.0
+            "Rating": 15.0,
+            "Weight": 7.0
           },
           "Gauntlets": {
             "Identifiers": "ArmorGauntlets",
-            "Rating": 9.0,
-            "Weight": 2.0
+            "Rating": 15.0,
+            "Weight": 7.0
           },
           "Helmet": {
             "Identifiers": "ArmorHelmet",
-            "Rating": 23.0,
-            "Weight": 15.0
+            "Rating": 20.0,
+            "Weight": 8.0
           },
           "Shield": {
             "Identifiers": "ArmorShield",
-            "Rating": 21.0,
-            "Weight": 4.0
+            "Rating": 30.0,
+            "Weight": 14.0
           }
         }
       },

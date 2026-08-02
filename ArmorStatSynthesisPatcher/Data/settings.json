@@ -169,7 +169,7 @@
           }
         }
       },
-      "Pentius": { 
+      "Pentius": {
         "MatchBehavior": "ModifyArmor",
         "Identifiers": "ArmorMaterialPenitus",
         "Type": "LightArmor",
@@ -957,8 +957,7 @@
             "Identifiers": "Tower Shield",
             "Rating": 24.0,
             "Weight": 8.0
-          }
-          ,
+          },
           "Shield": {
             "Identifiers": "Shield",
             "Rating": 18.0,
@@ -1002,7 +1001,7 @@
             "Weight": 4.0
           }
         }
-      },      
+      },
       "Boiled Netch Leather": {
         "MatchBehavior": "ModifyArmor",
         "Identifiers": "Boiled Netch Leather",
@@ -1317,6 +1316,38 @@
             "Identifiers": "ArmorShield",
             "Rating": 32.0,
             "Weight": 14.0
+          }
+        }
+      },
+      "Storm-Bear": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Storm-Bear",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 32.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 9.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 9.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 14.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 21.0,
+            "Weight": 4.0
           }
         }
       }
@@ -2897,7 +2928,8 @@
             "Weight": 5.0
           }
         }
-      },"Vigil Corrupted/Corrupted Vigilant": {
+      },
+      "Vigil Corrupted/Corrupted Vigilant": {
         "MatchBehavior": "ModifyArmor",
         "Identifiers": "Vigil Corrupted;Corrupted Vigilant",
         "Type": "HeavyArmor",
@@ -2929,7 +2961,7 @@
           }
         }
       },
-       "Vigil Enforcer/Vigilant": {
+      "Vigil Enforcer/Vigilant": {
         "MatchBehavior": "ModifyArmor",
         "Identifiers": "Vigil Enforcer;Vigilant",
         "Type": "HeavyArmor",
