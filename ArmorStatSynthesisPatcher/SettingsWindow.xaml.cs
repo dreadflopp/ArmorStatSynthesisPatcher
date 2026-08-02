@@ -9,7 +9,7 @@ using System.Windows.Media;
 using System.Windows.Markup;
 using Newtonsoft.Json;
 
-namespace ArmourStatsSynthesisPatcher
+namespace ArmorStatSynthesisPatcher
 {
     public partial class SettingsWindow : Window
     {

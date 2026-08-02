@@ -1,7 +1,7 @@
 using Newtonsoft.Json;
 using System.IO;
 
-namespace ArmourStatsSynthesisPatcher
+namespace ArmorStatSynthesisPatcher
 {
     public static class SettingsFileStore
     {

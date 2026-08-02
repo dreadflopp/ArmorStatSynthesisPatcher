@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Reflection;
 
-namespace ArmourStatsSynthesisPatcher
+namespace ArmorStatSynthesisPatcher
 {
     public enum PluginFilter
     {

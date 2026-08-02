@@ -7,7 +7,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows;
 
-namespace ArmourStatsSynthesisPatcher
+namespace ArmorStatSynthesisPatcher
 {
     public class Program
     {

@@ -2,7 +2,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
 
-namespace ArmourStatsSynthesisPatcher
+namespace ArmorStatSynthesisPatcher
 {
     public static class UsesTemplate
     {
