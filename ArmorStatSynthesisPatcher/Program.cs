@@ -5,7 +5,6 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using System.IO;
 using System.Text.RegularExpressions;
-using System.Reflection;
 using System.Windows;
 
 namespace ArmourStatsSynthesisPatcher
@@ -35,55 +34,6 @@ namespace ArmourStatsSynthesisPatcher
         private static void LogInfo(string message)
         {
             Console.WriteLine(message);
-        }
-
-        private static void EnsureOptionalPresetExists(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
-        {
-            const string presetFileName = "settings_debuffed.json";
-
-            try
-            {
-                var extraSettingsDataPath = state.ExtraSettingsDataPath;
-                if (string.IsNullOrWhiteSpace(extraSettingsDataPath))
-                {
-                    LogWarning($"Cannot install optional preset '{presetFileName}' because ExtraSettingsDataPath was empty.");
-                    return;
-                }
-
-                var destinationPath = Path.Combine(extraSettingsDataPath, presetFileName);
-                if (File.Exists(destinationPath))
-                {
-                    return;
-                }
-
-                var assemblyDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                if (string.IsNullOrWhiteSpace(assemblyDirectory))
-                {
-                    LogWarning($"Optional preset '{presetFileName}' could not be located because the patcher assembly directory was unavailable.");
-                    return;
-                }
-
-                var sourceCandidates = new[]
-                {
-                    Path.Combine(assemblyDirectory, "Data", presetFileName),
-                    Path.Combine(assemblyDirectory, presetFileName)
-                };
-
-                var sourcePath = sourceCandidates.FirstOrDefault(File.Exists);
-                if (string.IsNullOrWhiteSpace(sourcePath))
-                {
-                    LogWarning($"Optional preset '{presetFileName}' was not found next to the patcher executable.");
-                    return;
-                }
-
-                Directory.CreateDirectory(extraSettingsDataPath);
-                File.Copy(sourcePath, destinationPath, overwrite: false);
-                LogInfo($"Installed optional preset: {destinationPath}");
-            }
-            catch (Exception ex)
-            {
-                LogWarning($"Failed to install optional preset '{presetFileName}': {ex.Message}");
-            }
         }
 
         private class ArmorMatcher
@@ -554,9 +504,6 @@ namespace ArmourStatsSynthesisPatcher
             LogInfo("========================================");
 
             CurrentSettings = SettingsFileStore.Load(state.ExtraSettingsDataPath);
-
-            // Ensure users have access to optional presets in their live Synthesis settings folder.
-            EnsureOptionalPresetExists(state);
 
             // Check settings integrity before proceeding
             CheckSettingsIntegrity(state);

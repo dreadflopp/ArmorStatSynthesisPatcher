@@ -774,19 +774,6 @@ namespace ArmourStatsSynthesisPatcher
             return new string(chars.ToArray());
         }
 
-        private TextBox AddLabeledTextBox(string label, string value)
-        {
-            AddText(label, FontWeights.SemiBold, 13, Brushes.Black, topMargin: 10);
-            var box = new TextBox
-            {
-                Text = value,
-                Margin = new Thickness(0, 4, 0, 0),
-                MinWidth = 360
-            };
-            _detailPanel.Children.Add(box);
-            return box;
-        }
-
         private static void AddLabeledControlRow(Panel panel, string label, FrameworkElement control, string? tooltip = null, double topMargin = 10, double labelWidth = 130)
         {
             var row = new Grid
@@ -828,19 +815,6 @@ namespace ArmourStatsSynthesisPatcher
         private void AddText(string text, FontWeight weight, double size, Brush color, double topMargin = 0)
         {
             _detailPanel.Children.Add(new TextBlock
-            {
-                Text = text,
-                FontWeight = weight,
-                FontSize = size,
-                Foreground = color,
-                Margin = new Thickness(0, topMargin, 0, 0),
-                TextWrapping = TextWrapping.Wrap
-            });
-        }
-
-        private static void AddTextToPanel(Panel panel, string text, FontWeight weight, double size, Brush color, double topMargin = 0)
-        {
-            panel.Children.Add(new TextBlock
             {
                 Text = text,
                 FontWeight = weight,
