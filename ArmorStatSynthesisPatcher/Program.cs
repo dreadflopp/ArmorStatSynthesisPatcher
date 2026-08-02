@@ -3,19 +3,9 @@ using Mutagen.Bethesda.Synthesis;
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
-using Mutagen.Bethesda.Plugins.Records;
-using Mutagen.Bethesda.Plugins.Order;
-using Mutagen.Bethesda.Plugins.Binary.Headers;
-using System;
-using System.Linq;
-using System.Collections.Generic;
-using System.Text.Json;
 using System.IO;
 using System.Text.RegularExpressions;
-using System.Diagnostics;
 using System.Reflection;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace ArmourStatsSynthesisPatcher
