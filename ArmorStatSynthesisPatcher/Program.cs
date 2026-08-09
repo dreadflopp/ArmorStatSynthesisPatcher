@@ -617,6 +617,12 @@ namespace ArmorStatSynthesisPatcher
                 DebugLog($"Armor Type: {winningArmor.BodyTemplate?.ArmorType}");
                 DebugLog($"Current Rating: {winningArmor.ArmorRating}");
                 DebugLog($"Current Weight: {winningArmor.Weight}");
+                var keywordNames = winningArmor.Keywords?
+                    .Select(keyword => keyword.TryResolve(state.LinkCache, out var keywordRecord)
+                        ? keywordRecord.EditorID ?? keyword.FormKey.ToString()
+                        : keyword.FormKey.ToString())
+                    .ToList() ?? new List<string>();
+                DebugLog($"Keywords: {(keywordNames.Count > 0 ? string.Join("; ", keywordNames) : "<none>")}");
 
                 // Skip if the armor is in the ignored list
                 if (ignoredArmorFormKeys.Contains(winningArmor.FormKey))

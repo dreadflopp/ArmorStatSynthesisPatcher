@@ -8,6 +8,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Markup;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace ArmorStatSynthesisPatcher
 {
@@ -221,7 +222,7 @@ namespace ArmorStatSynthesisPatcher
                 }
 
                 RestoreFromBundledPreset(
-                    "settings_debuffed.json",
+                    new[] { "settings.json", "settings_debuffed.json" },
                     "Restored debuffed preset (debuffs Anniversary Edition CC content). Click Save to persist.");
             };
 
@@ -986,6 +987,11 @@ namespace ArmorStatSynthesisPatcher
 
         private void RestoreFromBundledPreset(string presetFileName, string successMessage)
         {
+            RestoreFromBundledPreset(new[] { presetFileName }, successMessage);
+        }
+
+        private void RestoreFromBundledPreset(IReadOnlyList<string> presetFileNames, string successMessage)
+        {
             try
             {
                 var assemblyDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -995,16 +1001,34 @@ namespace ArmorStatSynthesisPatcher
                     return;
                 }
 
-                var presetPath = Path.Combine(assemblyDirectory, "Data", presetFileName);
-                if (!File.Exists(presetPath))
+                JObject? mergedPreset = null;
+                foreach (var presetFileName in presetFileNames)
                 {
-                    SetStatus($"Bundled preset was not found: {presetFileName}", isError: true);
-                    return;
+                    var presetPath = Path.Combine(assemblyDirectory, "Data", presetFileName);
+                    if (!File.Exists(presetPath))
+                    {
+                        SetStatus($"Bundled preset was not found: {presetFileName}", isError: true);
+                        return;
+                    }
+
+                    var preset = JObject.Parse(File.ReadAllText(presetPath));
+                    if (mergedPreset is null)
+                    {
+                        mergedPreset = preset;
+                    }
+                    else
+                    {
+                        mergedPreset.Merge(
+                            preset,
+                            new JsonMergeSettings
+                            {
+                                MergeArrayHandling = MergeArrayHandling.Replace
+                            });
+                    }
                 }
 
-                var json = File.ReadAllText(presetPath);
                 JsonConvert.PopulateObject(
-                    json,
+                    mergedPreset?.ToString(Formatting.None) ?? "{}",
                     _settings,
                     new JsonSerializerSettings
                     {
@@ -1023,7 +1047,7 @@ namespace ArmorStatSynthesisPatcher
             }
             catch (Exception ex)
             {
-                SetStatus($"Failed to restore preset '{presetFileName}': {ex.Message}", isError: true);
+                SetStatus($"Failed to restore preset: {ex.Message}", isError: true);
             }
         }
 
