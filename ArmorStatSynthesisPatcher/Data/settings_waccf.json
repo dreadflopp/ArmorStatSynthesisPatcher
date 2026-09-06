@@ -1,0 +1,1696 @@
+{
+  "VanillaLightArmors": {
+    "Armor": {
+      "Ancient Shrouded": {
+        "Armor": {
+          "Boots": {
+            "Rating": 9.5,
+            "Weight": 3.0
+          },
+          "Gauntlets": {
+            "Rating": 10.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Rating": 15.0,
+            "Weight": 1.5
+          }
+        }
+      },
+      "Dragonscale": {
+        "Armor": {
+          "Armor": {
+            "Rating": 41.0,
+            "Weight": 12.0
+          },
+          "Boots": {
+            "Rating": 12.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Rating": 12.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Rating": 17.0,
+            "Weight": 6.0
+          },
+          "Shield": {
+            "Rating": 28.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Elven Hunter": {
+        "Armor": {
+          "Armor": {
+            "Rating": 35.0,
+            "Weight": 9.0
+          },
+          "Boots": {
+            "Rating": 9.0,
+            "Weight": 4.0
+          },
+          "Gauntlets": {
+            "Rating": 9.0,
+            "Weight": 3.0
+          }
+        }
+      },
+      "Elven Light": {
+        "Armor": {
+          "Armor": {
+            "Rating": 27.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Rating": 8.0,
+            "Weight": 3.5
+          },
+          "Gauntlets": {
+            "Rating": 8.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Rating": 13.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Elven": {
+        "Armor": {
+          "Armor": {
+            "Rating": 29.0,
+            "Weight": 7.0
+          },
+          "Boots": {
+            "Rating": 9.0,
+            "Weight": 4.0
+          },
+          "Gauntlets": {
+            "Rating": 9.0,
+            "Weight": 3.0
+          },
+          "Helmet": {
+            "Rating": 14.0,
+            "Weight": 3.0
+          },
+          "Shield": {
+            "Rating": 22.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Forsworn": {
+        "Armor": {
+          "Armor": {
+            "Rating": 24.0,
+            "Weight": 3.0
+          },
+          "Boots": {
+            "Rating": 6.0,
+            "Weight": 1.5
+          },
+          "Gauntlets": {
+            "Rating": 6.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Rating": 11.0,
+            "Weight": 1.5
+          }
+        }
+      },
+      "Fur": {
+        "Armor": {
+          "Armor": {
+            "Rating": 15.0,
+            "Weight": 3.0
+          },
+          "Boots": {
+            "Rating": 5.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Rating": 8.0,
+            "Weight": 1.0
+          }
+        }
+      },
+      "Gilded Elven": {
+        "Armor": {
+          "Armor": {
+            "Rating": 35.0,
+            "Weight": 9.0
+          }
+        }
+      },
+      "Glass": {
+        "Armor": {
+          "Armor": {
+            "Rating": 38.0,
+            "Weight": 10.0
+          },
+          "Boots": {
+            "Rating": 11.0,
+            "Weight": 5.0
+          },
+          "Gauntlets": {
+            "Rating": 11.0,
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Rating": 16.0,
+            "Weight": 5.0
+          },
+          "Shield": {
+            "Rating": 25.0,
+            "Weight": 7.0
+          }
+        }
+      },
+      "Guard": {
+        "Armor": {
+          "Armor": {
+            "Rating": 24.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Rating": 7.0,
+            "Weight": 1.0
+          },
+          "Imperial Light Shield": {
+            "Rating": 19.0,
+            "Weight": 5.0
+          },
+          "Light Armor": {
+            "Rating": 24.0,
+            "Weight": 6.0
+          },
+          "Shield": {
+            "Rating": 17.0,
+            "Weight": 4.0
+          },
+          "Studded Armor": {
+            "Rating": 25.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Guild Master's": {
+        "Armor": {
+          "Armor": {
+            "Rating": 32.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Rating": 9.0,
+            "Weight": 2.5
+          },
+          "Gauntlets": {
+            "Rating": 9.5,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Rating": 15.0,
+            "Weight": 1.5
+          }
+        }
+      },
+      "Hide": {
+        "Armor": {
+          "Boots": {
+            "Rating": 6.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Rating": 15.0,
+            "Weight": 3.0
+          },
+          "Studded Armor": {
+            "Rating": 24.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Leather": {
+        "Armor": {
+          "Boots": {
+            "Rating": 7.0,
+            "Weight": 3.0
+          },
+          "Helmet": {
+            "Rating": 11.0,
+            "Weight": 1.5
+          }
+        }
+      },
+      "Pentius": {
+        "Armor": {
+          "Armor": {
+            "Rating": 25.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Rating": 7.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Rating": 11.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Scaled": {
+        "Armor": {
+          "Boots": {
+            "Rating": 10.0,
+            "Weight": 3.0
+          },
+          "Gauntlets": {
+            "Rating": 10.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Rating": 15.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Shrouded": {
+        "Armor": {
+          "Armor": {
+            "Rating": 28.0,
+            "Weight": 5.0
+          },
+          "Boots": {
+            "Rating": 8.0,
+            "Weight": 3.0
+          },
+          "Helmet": {
+            "Rating": 12.5,
+            "Weight": 1.5
+          },
+          "Short-Sleeved Armor": {
+            "Rating": 27.0,
+            "Weight": 4.5
+          }
+        }
+      },
+      "Stormcloak Officer": {
+        "Armor": {
+          "Armor": {
+            "Rating": 28.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Stormcloak": {
+        "Armor": {
+          "Armor": {
+            "Rating": 24.0,
+            "Weight": 6.0
+          },
+          "Fur Boots": {
+            "Rating": 6.0,
+            "Weight": 2.0
+          },
+          "Fur Gauntlets": {
+            "Rating": 6.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Rating": 17.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Summerset Shadows": {
+        "Armor": {
+          "Armor": {
+            "Rating": 27.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Rating": 7.5,
+            "Weight": 2.5
+          },
+          "Gauntlets": {
+            "Rating": 7.5,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Rating": 12.0,
+            "Weight": 1.5
+          }
+        }
+      },
+      "Thieves Guild": {
+        "Armor": {
+          "Armor": {
+            "Rating": 27.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Rating": 7.5,
+            "Weight": 2.5
+          },
+          "Gauntlets": {
+            "Rating": 7.5,
+            "Weight": 2.0
+          },
+          "Gray Sleeveless Armor": {
+            "Rating": 26.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Rating": 12.0,
+            "Weight": 1.5
+          },
+          "Improved Armor": {
+            "Rating": 28.0,
+            "Weight": 6.0
+          },
+          "Improved Boots": {
+            "Rating": 8.0,
+            "Weight": 2.5
+          },
+          "Improved Gauntlets": {
+            "Rating": 8.0,
+            "Weight": 2.0
+          },
+          "Improved Helmet": {
+            "Rating": 13.0,
+            "Weight": 1.5
+          }
+        }
+      },
+      "Worn Shrouded": {
+        "Armor": {
+          "Armor": {
+            "Rating": 26.0,
+            "Weight": 5.0
+          },
+          "Boots": {
+            "Rating": 7.0,
+            "Weight": 3.0
+          },
+          "Gauntlets": {
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Rating": 12.0,
+            "Weight": 1.5
+          }
+        }
+      }
+    }
+  },
+  "DawnguardLightArmors": {
+    "Armor": {
+      "Ancient Falmer": {
+        "Armor": {
+          "Alternate Armor": {
+            "Rating": 38.0,
+            "Weight": 9.0
+          },
+          "Armor": {
+            "Rating": 36.0,
+            "Weight": 8.0
+          },
+          "Boots": {
+            "Rating": 10.0,
+            "Weight": 3.5
+          },
+          "Gauntlets": {
+            "Rating": 10.0,
+            "Weight": 3.0
+          },
+          "Helmet": {
+            "Rating": 12.0,
+            "Weight": 1.0
+          }
+        }
+      },
+      "Dawnguard": {
+        "Armor": {
+          "Armor": {
+            "Rating": 27.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Rating": 8.5,
+            "Weight": 4.0
+          },
+          "Gauntlets": {
+            "Rating": 8.5,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Rating": 13.5,
+            "Weight": 3.0
+          },
+          "Medium Armor": {
+            "Rating": 28.0,
+            "Weight": 7.0
+          },
+          "Shield": {
+            "Rating": 23.0,
+            "Weight": 6.0
+          },
+          "Sleeveless Armor": {
+            "Rating": 26.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Vampire": {
+        "Armor": {
+          "Armor": {
+            "Rating": 26.0,
+            "Weight": 5.0
+          },
+          "Gauntlets": {
+            "Rating": 7.0,
+            "Weight": 1.5
+          }
+        }
+      }
+    }
+  },
+  "DragonbornLightArmors": {
+    "Armor": {
+      "Blackguard's": {
+        "Armor": {
+          "Armor": {
+            "Rating": 29.0,
+            "Weight": 5.0
+          },
+          "Boots": {
+            "Rating": 8.5,
+            "Weight": 2.5
+          },
+          "Gauntlets": {
+            "Rating": 9.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Rating": 14.0,
+            "Weight": 1.5
+          }
+        }
+      },
+      "Chitin": {
+        "Armor": {
+          "Armor": {
+            "Rating": 28.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Rating": 8.5,
+            "Weight": 3.0
+          },
+          "Helmet": {
+            "Rating": 13.5,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Rating": 21.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Morag Tong": {
+        "Armor": {
+          "Armor": {
+            "Rating": 27.0,
+            "Weight": 5.0
+          },
+          "Boots": {
+            "Rating": 8.5,
+            "Weight": 2.0
+          },
+          "Gauntlets": {
+            "Rating": 8.0,
+            "Weight": 1.5
+          },
+          "Helmet": {
+            "Rating": 13.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Stalhrim Light": {
+        "Armor": {
+          "Armor": {
+            "Rating": 39.0,
+            "Weight": 9.0
+          },
+          "Boots": {
+            "Rating": 11.5,
+            "Weight": 4.5
+          },
+          "Gauntlets": {
+            "Rating": 11.5,
+            "Weight": 3.5
+          },
+          "Helmet": {
+            "Rating": 16.5,
+            "Weight": 4.0
+          },
+          "Shield": {
+            "Rating": 26.0,
+            "Weight": 6.0
+          }
+        }
+      }
+    }
+  },
+  "CreationClubLightArmors": {
+    "Armor": {
+      "Boiled Netch Leather": {
+        "Armor": {
+          "Armor": {
+            "Rating": 28.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Rating": 14.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Daedric Mail": {
+        "Armor": {
+          "Armor": {
+            "Rating": 44.0,
+            "Weight": 14.0
+          },
+          "Boots": {
+            "Rating": 13.0,
+            "Weight": 7.0
+          },
+          "Gauntlets": {
+            "Rating": 13.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Dwarven Mail": {
+        "Armor": {
+          "Armor": {
+            "Rating": 35.0,
+            "Weight": 9.0
+          },
+          "Boots": {
+            "Rating": 9.0,
+            "Weight": 5.0
+          },
+          "Gauntlets": {
+            "Rating": 9.0,
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Rating": 14.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Leather Scout": {
+        "Armor": {
+          "Boots": {
+            "Rating": 8.0,
+            "Weight": 3.0
+          }
+        }
+      },
+      "Netch Leather": {
+        "Armor": {
+          "Armor": {
+            "Rating": 26.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Rating": 7.0,
+            "Weight": 3.0
+          },
+          "Gauntlets": {
+            "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Rating": 12.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Rating": 16.0,
+            "Weight": 4.0
+          },
+          "Tower Shield": {
+            "Rating": 17.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Orcish Scaled": {
+        "Armor": {
+          "Armor": {
+            "Rating": 34.0,
+            "Weight": 8.0
+          },
+          "Boots": {
+            "Rating": 10.0,
+            "Weight": 4.0
+          },
+          "Gauntlets": {
+            "Rating": 10.0,
+            "Weight": 3.0
+          },
+          "Helmet": {
+            "Rating": 16.0,
+            "Weight": 3.0
+          }
+        }
+      },
+      "Painted Netch Leather": {
+        "Armor": {
+          "Armor": {
+            "Rating": 36.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Rating": 16.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Shadowed Boiled Netch Leather": {
+        "Armor": {
+          "Armor": {
+            "Rating": 34.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Rating": 16.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Shadowed Netch Leather": {
+        "Armor": {
+          "Armor": {
+            "Rating": 32.0,
+            "Weight": 6.0
+          },
+          "Boots": {
+            "Rating": 10.0,
+            "Weight": 3.0
+          },
+          "Gauntlets": {
+            "Rating": 10.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Rating": 15.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Rating": 22.0,
+            "Weight": 5.0
+          },
+          "Tower Shield": {
+            "Rating": 23.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Studded Dragonscale": {
+        "Armor": {
+          "Armor": {
+            "Rating": 41.0,
+            "Weight": 12.0
+          },
+          "Boots": {
+            "Rating": 12.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Rating": 12.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Rating": 17.0,
+            "Weight": 6.0
+          }
+        }
+      }
+    }
+  },
+  "UniqueLightArmors": {
+    "Armor": {
+      "Linwe's": {
+        "Armor": {
+          "Armor": {
+            "Rating": 29.0,
+            "Weight": 5.0
+          },
+          "Boots": {
+            "Rating": 8.5,
+            "Weight": 2.5
+          },
+          "Gauntlets": {
+            "Rating": 9.0,
+            "Weight": 2.0
+          },
+          "Helmet": {
+            "Rating": 14.0,
+            "Weight": 1.5
+          }
+        }
+      },
+      "Masks Light": {
+        "Armor": {
+          "Krosis": {
+            "Rating": 15.0,
+            "Weight": 2.0
+          },
+          "Volsung": {
+            "Rating": 16.0,
+            "Weight": 3.0
+          },
+          "Wooden Mask": {
+            "Rating": 1.0,
+            "Weight": 1.0
+          }
+        }
+      },
+      "Miraak's Mask": {
+        "Armor": {
+          "Miraak's Mask lvl 1": {
+            "Rating": 16.0,
+            "Weight": 4.0
+          },
+          "Miraak's Mask lvl 2": {
+            "Rating": 17.0,
+            "Weight": 5.0
+          },
+          "Miraak's Mask lvl 3": {
+            "Rating": 18.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Nightingale": {
+        "Armor": {
+          "Armor": {
+            "Rating": 34.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Rating": 10.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Rating": 16.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Old Gods": {
+        "Armor": {
+          "Armor": {
+            "Rating": 26.0,
+            "Weight": 4.0
+          },
+          "Gauntlets": {
+            "Rating": 7.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Rating": 12.0,
+            "Weight": 1.5
+          }
+        }
+      },
+      "Shield of Solitude": {
+        "Armor": {
+          "Shield of Solitude lvl 12": {
+            "Rating": 25.0,
+            "Weight": 5.0
+          },
+          "Shield of Solitude lvl 18": {
+            "Rating": 26.0,
+            "Weight": 5.0
+          },
+          "Shield of Solitude lvl 25": {
+            "Rating": 27.0,
+            "Weight": 5.0
+          },
+          "Shield of Solitude lvl 32": {
+            "Rating": 28.0,
+            "Weight": 5.0
+          },
+          "Shield of Solitude lvl 40": {
+            "Rating": 29.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Unique Light Armors": {
+        "Armor": {
+          "Dawnguard Rune Shield": {
+            "Rating": 24.0,
+            "Weight": 6.0
+          },
+          "Dismal Visage": {
+            "Rating": 13.0,
+            "Weight": 2.0
+          },
+          "Eastmarch Guard Helmet": {
+            "Rating": 11.0,
+            "Weight": 2.0
+          },
+          "Gloves of the Pugilist": {
+            "Rating": 6.0,
+            "Weight": 2.0
+          },
+          "Movarth's Boots": {
+            "Rating": 6.5,
+            "Weight": 2.0
+          },
+          "Predator's Grace": {
+            "Rating": 6.5,
+            "Weight": 2.0
+          },
+          "Savior's Hide": {
+            "Rating": 34.0,
+            "Weight": 6.0
+          },
+          "Torture's Hood": {
+            "Rating": 11.0,
+            "Weight": 1.5
+          },
+          "Tsun's Armor": {
+            "Rating": 29.0,
+            "Weight": 5.0
+          },
+          "Tsun's Boots": {
+            "Rating": 8.0,
+            "Weight": 1.0
+          },
+          "Tumblerbane Gloves": {
+            "Rating": 8.0,
+            "Weight": 2.0
+          }
+        }
+      },
+      "Vampire Royal": {
+        "Armor": {
+          "Armor": {
+            "Rating": 30.0,
+            "Weight": 6.0
+          }
+        }
+      }
+    }
+  },
+  "OtherLightArmors": {
+    "Armor": {
+      "Light Bonemold": {
+        "Armor": {
+          "Helmet": {
+            "Rating": 11.0,
+            "Weight": 2.0
+          }
+        }
+      }
+    }
+  },
+  "VanillaHeavyArmors": {
+    "Armor": {
+      "Ancient Nord": {
+        "Armor": {
+          "Boots": {
+            "Rating": 11.0,
+            "Weight": 5.0
+          },
+          "Gauntlets": {
+            "Rating": 11.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Banded Iron": {
+        "Armor": {
+          "Armor": {
+            "Rating": 28.0,
+            "Weight": 33.0
+          }
+        }
+      },
+      "Blades": {
+        "Armor": {
+          "Armor": {
+            "Rating": 37.0,
+            "Weight": 37.0
+          },
+          "Boots": {
+            "Rating": 14.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Rating": 14.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Rating": 19.0,
+            "Weight": 7.0
+          },
+          "Shield": {
+            "Rating": 28.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Daedric": {
+        "Armor": {
+          "Armor": {
+            "Rating": 49.0,
+            "Weight": 45.0
+          },
+          "Gauntlets": {
+            "Rating": 18.0,
+            "Weight": 9.0
+          },
+          "Shield": {
+            "Rating": 35.0,
+            "Weight": 15.0
+          }
+        }
+      },
+      "Dragonplate": {
+        "Armor": {
+          "Armor": {
+            "Rating": 46.0,
+            "Weight": 43.0
+          },
+          "Boots": {
+            "Rating": 17.0,
+            "Weight": 10.0
+          },
+          "Helmet": {
+            "Rating": 22.0,
+            "Weight": 12.0
+          },
+          "Shield": {
+            "Rating": 34.0,
+            "Weight": 14.0
+          }
+        }
+      },
+      "Dwarven Plate": {
+        "Armor": {
+          "Armor": {
+            "Rating": 35.0,
+            "Weight": 40.0
+          }
+        }
+      },
+      "Dwarven": {
+        "Armor": {
+          "Armor": {
+            "Rating": 34.0,
+            "Weight": 40.0
+          },
+          "Helmet": {
+            "Rating": 18.0,
+            "Weight": 10.0
+          },
+          "Shield": {
+            "Rating": 26.0,
+            "Weight": 13.0
+          }
+        }
+      },
+      "Ebony": {
+        "Armor": {
+          "Armor": {
+            "Rating": 43.0,
+            "Weight": 41.0
+          },
+          "Boots": {
+            "Rating": 16.0,
+            "Weight": 9.0
+          },
+          "Shield": {
+            "Rating": 32.0,
+            "Weight": 13.0
+          }
+        }
+      },
+      "Imperial": {
+        "Armor": {
+          "Armor": {
+            "Rating": 31.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Rating": 12.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Rating": 12.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Rating": 17.0,
+            "Weight": 5.0
+          },
+          "Helmet Full": {
+            "Rating": 18.0,
+            "Weight": 9.0
+          },
+          "Officer's Helmet": {
+            "Rating": 17.0,
+            "Weight": 6.0
+          },
+          "Shield": {
+            "Rating": 24.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Iron": {
+        "Armor": {
+          "Boots": {
+            "Rating": 11.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Rating": 11.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Rating": 15.0,
+            "Weight": 4.0
+          },
+          "Shield": {
+            "Rating": 20.0,
+            "Weight": 11.0
+          }
+        }
+      },
+      "Orcish": {
+        "Armor": {
+          "Armor": {
+            "Rating": 40.0,
+            "Weight": 39.0
+          },
+          "Boots": {
+            "Rating": 15.0,
+            "Weight": 9.0
+          },
+          "Helmet": {
+            "Rating": 20.0,
+            "Weight": 9.0
+          },
+          "Shield": {
+            "Rating": 30.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Steel Plate": {
+        "Armor": {
+          "Armor": {
+            "Rating": 37.0,
+            "Weight": 38.0
+          },
+          "Helmet": {
+            "Rating": 19.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Steel": {
+        "Armor": {
+          "Armor": {
+            "Rating": 32.0,
+            "Weight": 36.0
+          },
+          "Gauntlets": {
+            "Rating": 12.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Wolf": {
+        "Armor": {
+          "Armor": {
+            "Rating": 33.0,
+            "Weight": 30.0
+          },
+          "Boots": {
+            "Rating": 12.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Rating": 12.0,
+            "Weight": 5.0
+          }
+        }
+      }
+    }
+  },
+  "DawnguardHeavyArmors": {
+    "Armor": {
+      "Dawnguard": {
+        "Armor": {
+          "Armor": {
+            "Rating": 34.0,
+            "Weight": 38.0
+          },
+          "Helmet": {
+            "Rating": 18.0,
+            "Weight": 9.0
+          }
+        }
+      },
+      "Falmer Hardened": {
+        "Armor": {
+          "Armor": {
+            "Rating": 43.0,
+            "Weight": 39.0
+          },
+          "Boots": {
+            "Rating": 16.0,
+            "Weight": 7.0
+          }
+        }
+      },
+      "Falmer Heavy": {
+        "Armor": {
+          "Armor": {
+            "Rating": 35.0,
+            "Weight": 37.0
+          },
+          "Helmet": {
+            "Rating": 18.0,
+            "Weight": 8.0
+          }
+        }
+      }
+    }
+  },
+  "DragonbornHeavyArmors": {
+    "Armor": {
+      "Bonemold": {
+        "Armor": {
+          "Armor": {
+            "Rating": 31.0,
+            "Weight": 34.0
+          },
+          "Gauntlets": {
+            "Rating": 12.0,
+            "Weight": 5.0
+          },
+          "Guard Armor": {
+            "Rating": 32.0,
+            "Weight": 35.0
+          },
+          "Helmet": {
+            "Rating": 18.0,
+            "Weight": 9.0
+          },
+          "Pauldron Armor": {
+            "Rating": 32.0,
+            "Weight": 35.0
+          },
+          "Shield": {
+            "Rating": 24.0,
+            "Weight": 11.0
+          }
+        }
+      },
+      "Chitin Heavy": {
+        "Armor": {
+          "Armor": {
+            "Rating": 38.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Rating": 14.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Rating": 19.0,
+            "Weight": 7.0
+          }
+        }
+      },
+      "Improved Bonemold": {
+        "Armor": {
+          "Armor": {
+            "Rating": 34.0,
+            "Weight": 39.0
+          },
+          "Shield": {
+            "Rating": 26.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Nordic Carved": {
+        "Armor": {
+          "Armor": {
+            "Rating": 41.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Rating": 15.0,
+            "Weight": 8.0
+          },
+          "Helmet": {
+            "Rating": 20.0,
+            "Weight": 8.0
+          },
+          "Shield": {
+            "Rating": 30.0,
+            "Weight": 13.0
+          }
+        }
+      },
+      "Stalhrim Heavy": {
+        "Armor": {
+          "Armor": {
+            "Rating": 43.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Rating": 16.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Rating": 16.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Rating": 21.0,
+            "Weight": 9.0
+          }
+        }
+      }
+    }
+  },
+  "CreationClubHeavyArmors": {
+    "Armor": {
+      "Daedric Plate": {
+        "Armor": {
+          "Armor": {
+            "Rating": 49.0,
+            "Weight": 45.0
+          },
+          "Helmet": {
+            "Rating": 23.0,
+            "Weight": 15.0
+          }
+        }
+      },
+      "Dragonplate Insulated Enchanted": {
+        "Armor": {
+          "Armor": {
+            "Rating": 48.0,
+            "Weight": 43.0
+          },
+          "Boots": {
+            "Rating": 18.0,
+            "Weight": 10.0
+          },
+          "Gauntlets": {
+            "Rating": 18.0,
+            "Weight": 8.0
+          },
+          "Helmet": {
+            "Rating": 23.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Dragonplate Insulated": {
+        "Armor": {
+          "Armor": {
+            "Rating": 46.0,
+            "Weight": 43.0
+          },
+          "Boots": {
+            "Rating": 17.0,
+            "Weight": 10.0
+          },
+          "Gauntlets": {
+            "Rating": 17.0,
+            "Weight": 8.0
+          },
+          "Helmet": {
+            "Rating": 22.0,
+            "Weight": 12.0
+          }
+        }
+      },
+      "Ebony Plate": {
+        "Armor": {
+          "Armor": {
+            "Rating": 43.0,
+            "Weight": 41.0
+          },
+          "Boots": {
+            "Rating": 16.0,
+            "Weight": 9.0
+          },
+          "Gauntlets": {
+            "Rating": 16.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Rating": 21.0,
+            "Weight": 10.0
+          }
+        }
+      },
+      "Ebony Spell Knight": {
+        "Armor": {
+          "Armor": {
+            "Rating": 43.0,
+            "Weight": 39.0
+          },
+          "Boots": {
+            "Rating": 16.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Rating": 16.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Rating": 21.0,
+            "Weight": 10.0
+          }
+        }
+      },
+      "Iron Plate": {
+        "Armor": {
+          "Armor": {
+            "Rating": 28.0,
+            "Weight": 31.0
+          }
+        }
+      },
+      "Iron Spell Knight": {
+        "Armor": {
+          "Armor": {
+            "Rating": 31.0,
+            "Weight": 32.0
+          },
+          "Boots": {
+            "Rating": 12.0,
+            "Weight": 7.0
+          },
+          "Gauntlets": {
+            "Rating": 12.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Rating": 17.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Orcish Plate": {
+        "Armor": {
+          "Armor": {
+            "Rating": 40.0,
+            "Weight": 39.0
+          },
+          "Boots": {
+            "Rating": 15.0,
+            "Weight": 9.0
+          },
+          "Gauntlets": {
+            "Rating": 15.0,
+            "Weight": 7.0
+          },
+          "Helmet": {
+            "Rating": 20.0,
+            "Weight": 9.0
+          }
+        }
+      },
+      "Silver": {
+        "Armor": {
+          "Armor": {
+            "Rating": 40.0,
+            "Weight": 39.0
+          },
+          "Boots": {
+            "Rating": 15.0,
+            "Weight": 9.0
+          },
+          "Helmet": {
+            "Rating": 20.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Stalhrim Fur": {
+        "Armor": {
+          "Armor": {
+            "Rating": 43.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Rating": 16.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Rating": 16.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Rating": 21.0,
+            "Weight": 9.0
+          }
+        }
+      },
+      "Steel Soldier": {
+        "Armor": {
+          "Armor": {
+            "Rating": 31.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Rating": 12.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Rating": 12.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Rating": 17.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Steel Spell Knight": {
+        "Armor": {
+          "Armor": {
+            "Rating": 40.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Rating": 14.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Rating": 14.0,
+            "Weight": 5.0
+          },
+          "Helmet": {
+            "Rating": 19.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Vigil Corrupted/Corrupted Vigilant": {
+        "Armor": {
+          "Armor": {
+            "Rating": 37.0,
+            "Weight": 38.0
+          },
+          "Helmet": {
+            "Rating": 19.0,
+            "Weight": 8.0
+          },
+          "Open Helmet": {
+            "Rating": 19.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Vigil Enforcer/Vigilant": {
+        "Armor": {
+          "Armor": {
+            "Rating": 31.0,
+            "Weight": 35.0
+          },
+          "Boots": {
+            "Rating": 12.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Rating": 12.0,
+            "Weight": 6.0
+          }
+        }
+      },
+      "Vigil Silver Hand": {
+        "Armor": {
+          "Armor": {
+            "Rating": 34.0,
+            "Weight": 38.0
+          },
+          "Boots": {
+            "Rating": 13.0,
+            "Weight": 9.0
+          },
+          "Gauntlets": {
+            "Rating": 13.0,
+            "Weight": 6.0
+          },
+          "Helmet": {
+            "Rating": 18.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Vigil Veteran/Vigilant Enforcer": {
+        "Armor": {
+          "Armor": {
+            "Rating": 37.0,
+            "Weight": 38.0
+          },
+          "Helmet": {
+            "Rating": 19.0,
+            "Weight": 8.0
+          },
+          "Open Helmet": {
+            "Rating": 19.0,
+            "Weight": 8.0
+          }
+        }
+      }
+    }
+  },
+  "UniqueHeavyArmors": {
+    "Armor": {
+      "Masks Heavy": {
+        "Armor": {
+          "Ahzidal": {
+            "Rating": 18.0,
+            "Weight": 5.0
+          },
+          "Hevnoraak": {
+            "Rating": 19.0,
+            "Weight": 6.0
+          },
+          "Konahrik": {
+            "Rating": 23.0,
+            "Weight": 10.0
+          },
+          "Nahkriin": {
+            "Rating": 22.0,
+            "Weight": 9.0
+          },
+          "Rahgot": {
+            "Rating": 21.0,
+            "Weight": 8.0
+          },
+          "Vokun": {
+            "Rating": 20.0,
+            "Weight": 7.0
+          },
+          "Zahkriisos": {
+            "Rating": 22.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Miraak's Mask": {
+        "Armor": {
+          "Miraak's Mask lvl 1": {
+            "Rating": 21.0,
+            "Weight": 9.0
+          },
+          "Miraak's Mask lvl 2": {
+            "Rating": 22.0,
+            "Weight": 9.0
+          },
+          "Miraak's Mask lvl 3": {
+            "Rating": 23.0,
+            "Weight": 9.0
+          }
+        }
+      },
+      "Unique Heavy Armors": {
+        "Armor": {
+          "Aetherial Shield": {
+            "Rating": 26.0,
+            "Weight": 13.0
+          },
+          "Dented Iron Shield": {
+            "Rating": 18.0,
+            "Weight": 11.0
+          },
+          "Jagged Crown": {
+            "Rating": 21.0,
+            "Weight": 7.0
+          },
+          "Shellbug Helmet": {
+            "Rating": 22.0,
+            "Weight": 9.0
+          },
+          "Shield of Ysgramor": {
+            "Rating": 31.0,
+            "Weight": 12.0
+          },
+          "Spellbreaker": {
+            "Rating": 36.0,
+            "Weight": 12.0
+          },
+          "Visage of Mzund": {
+            "Rating": 22.0,
+            "Weight": 10.0
+          }
+        }
+      }
+    }
+  },
+  "OtherHeavyArmors": {
+    "Armor": {}
+  },
+  "ClothingArmors": {
+    "Armor": {}
+  }
+}

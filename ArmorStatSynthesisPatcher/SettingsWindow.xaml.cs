@@ -183,16 +183,16 @@ namespace ArmorStatSynthesisPatcher
             AddText("Global Settings", FontWeights.SemiBold, 20, Brushes.Black);
             //AddText("These values map directly to top-level keys in settings.json.", FontWeights.Normal, 12, Brushes.DimGray);
 
-            var presetButtonRow = new StackPanel
+            var presetButtonRow = new WrapPanel
             {
-                Orientation = Orientation.Horizontal,
                 Margin = new Thickness(0, 10, 0, 2)
             };
 
             var restoreDefaultButton = new Button
             {
                 Content = "Restore Default Settings",
-                Width = 190,
+                Width = 200,
+                Margin = new Thickness(0, 0, 8, 8),
                 ToolTip = "Restore default settings preset."
             };
             restoreDefaultButton.Click += (_, _) =>
@@ -211,7 +211,7 @@ namespace ArmorStatSynthesisPatcher
             {
                 Content = "Restore Debuffed Settings",
                 Width = 200,
-                Margin = new Thickness(8, 0, 0, 0),
+                Margin = new Thickness(0, 0, 8, 8),
                 ToolTip = "Restore default debuffed settings preset. This preset debuffs Anniversary Edition CC content."
             };
             restoreDebuffedButton.Click += (_, _) =>
@@ -226,8 +226,28 @@ namespace ArmorStatSynthesisPatcher
                     "Restored debuffed preset (debuffs Anniversary Edition CC content). Click Save to persist.");
             };
 
+            var restoreWaccfButton = new Button
+            {
+                Content = "Restore WACCF Settings",
+                Width = 200,
+                Margin = new Thickness(0, 0, 8, 8),
+                ToolTip = "Restore the default settings with changes from Weapons Armor Clothing and Clutter Fixes."
+            };
+            restoreWaccfButton.Click += (_, _) =>
+            {
+                if (!ConfirmRestorePreset("WACCF settings"))
+                {
+                    return;
+                }
+
+                RestoreFromBundledPreset(
+                    new[] { "settings.json", "settings_waccf.json" },
+                    "Restored WACCF preset (applies changes from Weapons Armor Clothing and Clutter Fixes). Click Save to persist.");
+            };
+
             presetButtonRow.Children.Add(restoreDefaultButton);
             presetButtonRow.Children.Add(restoreDebuffedButton);
+            presetButtonRow.Children.Add(restoreWaccfButton);
             _detailPanel.Children.Add(presetButtonRow);
 
             var props = typeof(Settings)

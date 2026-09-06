@@ -3,7 +3,7 @@
   "PluginFilter": "IncludePlugins",
   "PluginIncludeList": "Skyrim.esm;Dawnguard.esm;Dragonborn.esm;ccasvsse001-almsivi.esm;ccbgssse008-wraithguard.esl;ccbgssse021-lordsmail.esl;ccbgssse025-advdsgs.esm;ccbgssse041-netchleather.esl;ccbgssse050-ba_daedric.esl;ccbgssse051-ba_daedricmail.esl;ccbgssse052-ba_iron.esl;ccbgssse053-ba_leather.esl;ccbgssse054-ba_orcish.esl; ccbgssse055-ba_orcishscaled.esl;ccbgssse056-ba_silver.esl;ccbgssse057-ba_stalhrim.esl;ccbgssse058-ba_steel.esl;ccbgssse059-ba_dragonplate.esl;ccbgssse060-ba_dragonscale.esl;ccbgssse061-ba_dwarven.esl; ccbgssse062-ba_dwarvenmail.esl;ccbgssse063-ba_ebony.esl;ccbgssse064-ba_elven.esl;ccbgssse069-contest.esl;cccbhsse001-gaunt.esl;ccedhsse002-splkntset.esl;ccedhsse003-redguard.esl;ccffbsse001-imperialdragon.esl; cckrtsse001_altar.esl;ccmtysse001-knightsofthenine.esl;ccmtysse002-ve.esl;ccrmssse001-necrohouse.esl;cctwbsse001-puzzledungeon.esm;ccvsvsse003-necroarts.esl;Dwarfsphere.esp; Girl's Travel Outfit.esp;GVLT_LifeswornVestige.esp;Hothtrooper44_ArmorCompilation.esp;Kad_MoonMonkRobes.esp;KhajiitWillFollow.esp;Lollygagging Fashions.esp;Midwood Isle.esp; MoonAndStar_MAS.esp;moonpath.esp;PigIronSet.esl;RihadSwordsmanSet.esl;SaviorsHideStandalone.esp;Skyrim Extended Cut - Saints and Seducers.esp;_Fuse00_ArmorRaven.esp;[FB] Master Thief Armor.esp; [FB] Templar Assassin.esp;018Auri.esp;Ashe - Fire and Blood.esp;BSMBonemoldSet.esp;ForswornArmorVariantsFurMashup.esp;ForswornHeaddressVariants.esp;JS Armored Circlets SE.esp;BSHeartland.esm;BSAssets.esm;_Fuse00_ArmorKellan.esp;NW_Steel_Plate_Armors.esp;1Dwemer.esl;1FlutedArmor.esl;1FS.esl;1WR.esl;1SilverArmor.esl;1YsmirArmorSE.esl;Armors of the Velothi.esp;SMP_SpellKnightVariants.esp;_Fuse00_ArmorGorm.esp;Steel Light Elven Armor.esp;StuddedElvenArmor.esp;Chevalier's Armor Set.esp;Cyrodiilic Thief.esp;evgInfiltratorarmor.esp;NordicLeatherArmor.esp;Marauder Armor Expansion.esp;Northman - Armor Mashup.esp;Prvti_DragonCultWeapons.esp;FreehandArmor.esp;GVLT_LifeswornVestige.esp;Elite Wolf Armor.esp;_Fuse00_ArmorTravelingMageLArmor.esp;KvetchiMercenary.esl;DSQuestPack.esp;TheChoiceIsYours.esp;Aetherium Forge Destroys Items.esp;EastEmpireCompanyArmor.esp;Lore Weapon Expansion.esp;JK's Radiant Raiment.esp;DBDawnstar Sanctuary SSE.esp;MorthalBarrow.esp;DIS_NordScale.esp;WarmongerArmory_SSE.esp;QwibWanderingMercenaryOutfit.esp;Rogue Nord Armor.esp;Mercenary Light Iron Armor.esp;DIS_Armor_Compilation.esp;SkyforgeWeaponReplacer.esp;Mysteries of the Dwemer - Quest Mod.esp;It Came from Akavir.esp;Walks-Distant-Sands Quest Mod.esp;Creation Club Alternative Armors - Enchanted Variants and Integration.esp;SnowElvenArsenal.esp;CauseReducedCut.esp;CC Goblins Addon.esp;CWO - CC - CWChamps.esp;Bandit War.esp",
   "PluginExcludeList": "",
-  "IgnoredArmorFormKeys": "0C33BD:Skyrim.esm;0B8837:Skyrim.esm;015023:MoonAndStar_MAS.esp;000843:Helmet Toggle2.esp",
+  "IgnoredArmorFormKeys": "0C33BD:Skyrim.esm;0B8837:Skyrim.esm;015023:MoonAndStar_MAS.esp;000843:Helmet Toggle2.esp;03CF35:Dragonborn.esm;016EE3:Skyrim.esm;016EE5:Skyrim.esm;016EE6:Skyrim.esm;02003C:Skyrim.esm;02003E:Skyrim.esm;02003F:Skyrim.esm;020042:Skyrim.esm;020048:Skyrim.esm;020157:Skyrim.esm;020159:Skyrim.esm;02015A:Skyrim.esm;02015C:Skyrim.esm;02015E:Skyrim.esm;03636F:Skyrim.esm;03BC81:Skyrim.esm;03BC82:Skyrim.esm;03BC83:Skyrim.esm;03BC84:Skyrim.esm;04124A:Skyrim.esm;06A0A9:Skyrim.esm;06A0AB:Skyrim.esm;06A0AD:Skyrim.esm;06A0AF:Skyrim.esm;06A0B1:Skyrim.esm",
   "ModifyRatings": true,
   "ModifyWeights": true,
   "RemoveRatingForUnknownArmorPieces": false,
@@ -53,7 +53,7 @@
       },
       "Worn Shrouded": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "Worn Shrouded",
+        "Identifiers": "Worn Shrouded;105966:Skyrim.esm;105967:Skyrim.esm;105968:Skyrim.esm;105969:Skyrim.esm;10EB5B:Skyrim.esm;10EB5C:Skyrim.esm;10EB5D:Skyrim.esm;10EB5E:Skyrim.esm",
         "Type": "LightArmor",
         "Armor": {
           "Armor": {
@@ -80,7 +80,7 @@
       },
       "Stormcloak": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "ArmorMaterialStormcloak;0A6D7F:Skyrim.esm;0A6D7D:Skyrim.esm",
+        "Identifiers": "Stormcloak Cuirass;Stormcloak Helmet;Stormcloak Shield;ArmorMaterialStormcloak;0A6D7F:Skyrim.esm;0A6D7D:Skyrim.esm",
         "Type": "LightArmor",
         "Armor": {
           "Armor": {
@@ -102,6 +102,11 @@
             "Identifiers": "ArmorHelmet",
             "Rating": 10.0,
             "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 17.0,
+            "Weight": 3.0
           }
         }
       },
@@ -134,16 +139,21 @@
       },
       "Guard": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "Imperial;ArmorMaterialImperialLight;Guard's",
+        "Identifiers": "Imperial;ArmorMaterialImperialLight;Guard's;WAF_ArmorMaterialGuard;Winterhold Old Armor;Old Whiterun",
         "Type": "LightArmor",
         "Armor": {
-          "Armor": {
-            "Identifiers": "ArmorCuirass",
+          "Studded Armor": {
+            "Identifiers": "Studded Imperial Armor;Imperial Studded Armor",
             "Rating": 23.0,
             "Weight": 6.0
           },
-          "Studded Armor": {
-            "Identifiers": "Studded Imperial Armor",
+          "Light Armor": {
+            "Identifiers": "Imperial Light Armor",
+            "Rating": 23.0,
+            "Weight": 6.0
+          },
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
             "Rating": 23.0,
             "Weight": 6.0
           },
@@ -161,6 +171,11 @@
             "Identifiers": "ArmorHelmet",
             "Rating": 11.0,
             "Weight": 2.0
+          },
+          "Imperial Light Shield": {
+            "Identifiers": "Imperial Light Shield",
+            "Rating": 19.0,
+            "Weight": 4.0
           },
           "Shield": {
             "Identifiers": "ArmorShield",
@@ -373,6 +388,11 @@
         "Identifiers": "Shrouded;Templar Assassin",
         "Type": "LightArmor",
         "Armor": {
+          "Short-Sleeved Armor": {
+            "Identifiers": "05ABC3:Skyrim.esm",
+            "Rating": 29.0,
+            "Weight": 7.0
+          },
           "Armor": {
             "Identifiers": "ArmorCuirass",
             "Rating": 29.0,
@@ -405,6 +425,11 @@
         "Identifiers": "ArmorMaterialThievesGuild;Master Thief",
         "Type": "LightArmor",
         "Armor": {
+          "Gray Sleeveless Armor": {
+            "Identifiers": "0E35DB:Skyrim.esm",
+            "Rating": 29.0,
+            "Weight": 7.0
+          },
           "Armor": {
             "Identifiers": "ArmorCuirass",
             "Rating": 29.0,
@@ -444,6 +469,33 @@
             "Identifiers": "0D3ACE:Skyrim.esm",
             "Rating": 15.0,
             "Weight": 1.0
+          }
+        }
+      },
+      "Summerset Shadows": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Summerset Shadows;WAF_ArmorMaterialTGSummerset",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 29.0,
+            "Weight": 7.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 9.0,
+            "Weight": 1.5
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 9.0,
+            "Weight": 1.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 13.0,
+            "Weight": 1.5
           }
         }
       },
@@ -655,6 +707,16 @@
         "Identifiers": "DLC1ArmorMaterialDawnguard",
         "Type": "LightArmor",
         "Armor": {
+          "Sleeveless Armor": {
+            "Identifiers": "00F3FB:Dawnguard.esm",
+            "Rating": 29.0,
+            "Weight": 6.0
+          },
+          "Medium Armor": {
+            "Identifiers": "00F402:Dawnguard.esm",
+            "Rating": 29.0,
+            "Weight": 6.0
+          },
           "Armor": {
             "Identifiers": "ArmorCuirass",
             "Rating": 29.0,
@@ -704,13 +766,50 @@
           }
         }
       },
-      "Ancient Falmer": {
+      "Falmer": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "Ancient Falmer;Curate's",
+        "Identifiers": "Falmer;DLC1ArmorMaterielFalmerHeavyOriginal",
         "Type": "LightArmor",
         "Armor": {
           "Armor": {
             "Identifiers": "ArmorCuirass",
+            "Rating": 27.0,
+            "Weight": 5.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 8.0,
+            "Weight": 1.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 8.0,
+            "Weight": 1.5
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 13.0,
+            "Weight": 2.0
+          },
+          "Shield": {
+            "Identifiers": "ArmorShield",
+            "Rating": 20.0,
+            "Weight": 4.0
+          }
+        }
+      },
+      "Ancient Falmer": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Ancient Falmer;Curate's;Snow Elf",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 38.0,
+            "Weight": 7.0
+          },
+          "Alternate Armor": {
+            "Identifiers": "00CAD3:Dawnguard.esm",
             "Rating": 38.0,
             "Weight": 7.0
           },
@@ -764,7 +863,7 @@
       },
       "Morag Tong": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "DLC2ArmorMaterialMoragTong",
+        "Identifiers": "Morag Tong;DLC2ArmorMaterialMoragTong",
         "Type": "LightArmor",
         "Armor": {
           "Armor": {
@@ -791,7 +890,7 @@
       },
       "Chitin": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "DLC2ArmorMaterialChitinLight;WAF_MaterialChitin",
+        "Identifiers": "DLC2ArmorMaterialChitinLight",
         "Type": "LightArmor",
         "Armor": {
           "Armor": {
@@ -823,7 +922,7 @@
       },
       "Blackguard's": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "USLEEPArmorMaterialBlackguard",
+        "Identifiers": "Blackguard's;USLEEPArmorMaterialBlackguard",
         "Type": "LightArmor",
         "Armor": {
           "Armor": {
@@ -1061,9 +1160,9 @@
           }
         }
       },
-      "Shadow Boiled Netch Leather": {
+      "Shadowed Boiled Netch Leather": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "Shadow Boiled Netch Leather",
+        "Identifiers": "Shadowed Boiled Netch Leather;WAF_ArmorMatchingSetLeatherNetchShadowed",
         "Type": "LightArmor",
         "Armor": {
           "Armor": {
@@ -1372,7 +1471,7 @@
     "Armor": {
       "Masks Light": {
         "MatchBehavior": "Pass",
-        "Identifiers": "061CB9:Skyrim.esm;061CAB:Skyrim.esm;061C8B:Skyrim.esm;061CCA:Skyrim.esm;061CC0:Skyrim.esm",
+        "Identifiers": "061CB9:Skyrim.esm;061CAB:Skyrim.esm;061C8B:Skyrim.esm;061CCA:Skyrim.esm;061CC0:Skyrim.esm;061CC2:Skyrim.esm;0240FF:Dragonborn.esm",
         "Type": "LightArmor",
         "Armor": {
           "Krosis": {
@@ -1399,12 +1498,22 @@
             "Identifiers": "061CC0:Skyrim.esm",
             "Rating": 17.0,
             "Weight": 4.0
+          },
+          "Otar": {
+            "Identifiers": "061CC2:Skyrim.esm",
+            "Rating": 17.0,
+            "Weight": 4.0
+          },
+          "Dukaan": {
+            "Identifiers": "0240FF:Dragonborn.esm",
+            "Rating": 17.5,
+            "Weight": 5.0
           }
         }
       },
       "Old Gods": {
         "MatchBehavior": "Pass",
-        "Identifiers": "ArmorMaterialMS02Forsworn",
+        "Identifiers": "0EAFD0:Skyrim.esm;ArmorMaterialMS02Forsworn",
         "Type": "LightArmor",
         "Armor": {
           "Armor": {
@@ -1524,7 +1633,7 @@
       },
       "Unique Light Armors": {
         "MatchBehavior": "Pass",
-        "Identifiers": "02AC61:Skyrim.esm;0EE5C0:Skyrim.esm;0C0165:Skyrim.esm;0F5981:Skyrim.esm;0A4DCD:Skyrim.esm;0F9904:Skyrim.esm;096D9B:Skyrim.esm;10559D:Skyrim.esm;037B8C:Dragonborn.esm;04D170:ccasvsse001-almsivi.esm;Gray Cowl of Nocturnal;00092B:ccbgssse041-netchleather.esl;000CCF:ccrmssse001-necrohouse.esl;011BAF:Dawnguard.esm;000805:cccbhsse001-gaunt.esl;00084C:cccbhsse001-gaunt.esl;01A755:Dawnguard.esm",
+        "Identifiers": "02AC61:Skyrim.esm;0EE5C0:Skyrim.esm;0C0165:Skyrim.esm;0C0166:Skyrim.esm;0F5981:Skyrim.esm;10A06A:Skyrim.esm;0A4DCD:Skyrim.esm;0F9904:Skyrim.esm;096D9B:Skyrim.esm;10559D:Skyrim.esm;05CBFE:Skyrim.esm;037B8C:Dragonborn.esm;04D170:ccasvsse001-almsivi.esm;Gray Cowl of Nocturnal;00092B:ccbgssse041-netchleather.esl;000CCF:ccrmssse001-necrohouse.esl;011BAF:Dawnguard.esm;000805:cccbhsse001-gaunt.esl;00084C:cccbhsse001-gaunt.esl;01A755:Dawnguard.esm;00284D:Dawnguard.esm;000867:ccbgssse059-ba_dragonplate.esl",
         "Type": "LightArmor",
         "Armor": {
           "Savior's Hide": {
@@ -1542,9 +1651,19 @@
             "Rating": 29.0,
             "Weight": 0.0
           },
+          "Tsun's Boots": {
+            "Identifiers": "0C0166:Skyrim.esm",
+            "Rating": 8.0,
+            "Weight": 0.0
+          },
           "Tumblerbane Gloves": {
             "Identifiers": "0F5981:Skyrim.esm",
             "Rating": 7.0,
+            "Weight": 2.0
+          },
+          "Gloves of the Pugilist": {
+            "Identifiers": "10A06A:Skyrim.esm",
+            "Rating": 5.0,
             "Weight": 2.0
           },
           "Predator's Grace": {
@@ -1566,6 +1685,11 @@
             "Identifiers": "10559D:Skyrim.esm",
             "Rating": 12.0,
             "Weight": 2.0
+          },
+          "General Tullius' Armor": {
+            "Identifiers": "05CBFE:Skyrim.esm",
+            "Rating": 28.0,
+            "Weight": 5.0
           },
           "Dawnguard Rune Shield": {
             "Identifiers": "011BAF:Dawnguard.esm",
@@ -1604,6 +1728,16 @@
           },
           "Reaper Bracers": {
             "Identifiers": "01A755:Dawnguard.esm",
+            "Rating": 9.0,
+            "Weight": 2.0
+          },
+          "Auriel's Shield": {
+            "Identifiers": "00284D:Dawnguard.esm",
+            "Rating": 30.0,
+            "Weight": 7.0
+          },
+          "Dismal Visage": {
+            "Identifiers": "000867:ccbgssse059-ba_dragonplate.esl",
             "Rating": 9.0,
             "Weight": 2.0
           }
@@ -1677,11 +1811,87 @@
             "Weight": 1.0
           }
         }
+      },
+      "Shield of Solitude": {
+        "MatchBehavior": "Pass",
+        "Identifiers": "09E023:Skyrim.esm;10EB62:Skyrim.esm;10EB64:Skyrim.esm;10EB63:Skyrim.esm;10EB65:Skyrim.esm",
+        "Type": "LightArmor",
+        "Armor": {
+          "Shield of Solitude lvl 12": {
+            "Identifiers": "09E023:Skyrim.esm",
+            "Rating": 26.0,
+            "Weight": 12.0
+          },
+          "Shield of Solitude lvl 18": {
+            "Identifiers": "10EB62:Skyrim.esm",
+            "Rating": 27.0,
+            "Weight": 12.0
+          },
+          "Shield of Solitude lvl 25": {
+            "Identifiers": "10EB64:Skyrim.esm",
+            "Rating": 28.0,
+            "Weight": 12.0
+          },
+          "Shield of Solitude lvl 32": {
+            "Identifiers": "10EB63:Skyrim.esm",
+            "Rating": 30.0,
+            "Weight": 12.0
+          },
+          "Shield of Solitude lvl 40": {
+            "Identifiers": "10EB65:Skyrim.esm",
+            "Rating": 32.0,
+            "Weight": 12.0
+          }
+        }
       }
     }
   },
   "OtherLightArmors": {
     "Armor": {
+      "Executioner's": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Executioner's Armor;Executioner's Boots;Executioner's Gloves;Executioner's Hood;WAF_ArmorMatchingSetExecutioner",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 25.0,
+            "Weight": 5.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 6.0,
+            "Weight": 1.5
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 6.5,
+            "Weight": 1.5
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 7.0,
+            "Weight": 1.0
+          }
+        }
+      },
+      "Noble": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Noble Armguards;Noble Gilded Wristguards",
+        "Type": "LightArmor",
+        "Armor": {
+          "Armguards": {
+            "Identifiers": "Noble Armguards",
+            "Rating": 8.0,
+            "Weight": 1.0
+          },
+          "Gilded Wristguards": {
+            "Identifiers": "Noble Gilded Wristguards",
+            "Rating": 7.0,
+            "Weight": 1.0
+          }
+        }
+      },
       "Light Iron": {
         "MatchBehavior": "ModifyArmor",
         "Identifiers": "ArmorMaterialIron;IAKMaterialIron",
@@ -1778,7 +1988,7 @@
           }
         }
       },
-      "Light Stalhrim": {
+      "Light Ebony": {
         "MatchBehavior": "ModifyArmor",
         "Identifiers": "ArmorMaterialEbony;IAKMaterialEbony;Ebony",
         "Type": "LightArmor",
@@ -2034,7 +2244,7 @@
     "Armor": {
       "Guard": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "Guard's",
+        "Identifiers": "Guard's;WAF_ArmorMaterialGuard;Old Whiterun Shield;Winterhold Old Shield",
         "Type": "HeavyArmor",
         "Armor": {
           "Armor": {
@@ -2167,7 +2377,7 @@
       },
       "Banded Iron": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "Banded Iron",
+        "Identifiers": "Banded Iron;ArmorMaterialIronBanded",
         "Type": "HeavyArmor",
         "Armor": {
           "Armor": {
@@ -2356,7 +2566,7 @@
       },
       "Steel Plate": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "ArmorMaterialSteelPlate;IAKMaterialAdvancedPlate",
+        "Identifiers": "ArmorMaterialSteelPlate;IAKMaterialAdvancedPlate;DLC2dunKolbjornAhzidalItem",
         "Type": "HeavyArmor",
         "Armor": {
           "Armor": {
@@ -2552,7 +2762,7 @@
       },
       "Falmer Hardened": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "DLC1ArmorMaterialFalmerHardened",
+        "Identifiers": "Falmer Hardened;DLC1ArmorMaterialFalmerHardened",
         "Type": "HeavyArmor",
         "Armor": {
           "Armor": {
@@ -2579,7 +2789,7 @@
       },
       "Falmer Heavy": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "DLC1ArmorMaterielFalmerHeavy",
+        "Identifiers": "Falmer Heavy;DLC1ArmorMaterielFalmerHeavy",
         "Type": "HeavyArmor",
         "Armor": {
           "Armor": {
@@ -2619,9 +2829,14 @@
             "Weight": 34.0
           },
           "Pauldron Armor": {
-            "Identifiers": "Pauldron Armor",
+            "Identifiers": "Pauldron Armor;Reinforced Armor",
             "Rating": 33.0,
             "Weight": 36.0
+          },
+          "Guard Armor": {
+            "Identifiers": "Guard Armor",
+            "Rating": 32.0,
+            "Weight": 34.0
           },
           "Boots": {
             "Identifiers": "ArmorBoots",
@@ -2647,7 +2862,7 @@
       },
       "Improved Bonemold": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "Improved Bonemold",
+        "Identifiers": "Improved Bonemold;Bonemold Armor Improved;Bonemold Shield Improved;WAF_DLC2ArmorMaterialBonemoldImproved",
         "Type": "HeavyArmor",
         "Armor": {
           "Armor": {
@@ -2679,7 +2894,7 @@
       },
       "Chitin Heavy": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "DLC2ArmorMaterialChitinHeavy;WAF_MaterialChitin",
+        "Identifiers": "DLC2ArmorMaterialChitinHeavy",
         "Type": "HeavyArmor",
         "Armor": {
           "Armor": {
@@ -3172,7 +3387,7 @@
       },
       "Ebony Spell Knight": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "Ebony Spell Knight",
+        "Identifiers": "Ebony Spell Knight;000D7B:ccedhsse002-splkntset.esl;000D7C:ccedhsse002-splkntset.esl;000D7D:ccedhsse002-splkntset.esl;000D7E:ccedhsse002-splkntset.esl;00089C:ccedhsse002-splkntset.esl;00089D:ccedhsse002-splkntset.esl;00089E:ccedhsse002-splkntset.esl;00089F:ccedhsse002-splkntset.esl;0008A0:ccedhsse002-splkntset.esl;0008A1:ccedhsse002-splkntset.esl;0008A2:ccedhsse002-splkntset.esl;0008A3:ccedhsse002-splkntset.esl",
         "Type": "HeavyArmor",
         "Armor": {
           "Armor": {
@@ -3200,6 +3415,33 @@
       "Dragonplate Insulated": {
         "MatchBehavior": "ModifyArmor",
         "Identifiers": "Dragonplate Insulated",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 48.0,
+            "Weight": 40.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 19.0,
+            "Weight": 8.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 19.0,
+            "Weight": 8.0
+          },
+          "Helmet": {
+            "Identifiers": "ArmorHelmet",
+            "Rating": 24.0,
+            "Weight": 8.0
+          }
+        }
+      },
+      "Dragonplate Insulated Enchanted": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "000839:ccbgssse059-ba_dragonplate.esl;00083A:ccbgssse059-ba_dragonplate.esl;00083B:ccbgssse059-ba_dragonplate.esl;00083C:ccbgssse059-ba_dragonplate.esl",
         "Type": "HeavyArmor",
         "Armor": {
           "Armor": {
@@ -3531,7 +3773,7 @@
       },
       "Masks Heavy": {
         "MatchBehavior": "Pass",
-        "Identifiers": "061CA5:Skyrim.esm;061CC1:Skyrim.esm;061CC2:Skyrim.esm;061CC0:Skyrim.esm;061CC9:Skyrim.esm;061CD6:Skyrim.esm;0240FE:Dragonborn.esm;0240FF:Dragonborn.esm;024037:Dragonborn.esm;00081F:ccasvsse001-almsivi.esm;000821:ccasvsse001-almsivi.esm;000820:ccasvsse001-almsivi.esm;000822::ccasvsse001-almsivi.esm;061CAB:Skyrim.esm",
+        "Identifiers": "061CA5:Skyrim.esm;061CC1:Skyrim.esm;061CC2:Skyrim.esm;061CC0:Skyrim.esm;061CC9:Skyrim.esm;061CD6:Skyrim.esm;0240FE:Dragonborn.esm;0240FF:Dragonborn.esm;024037:Dragonborn.esm;00081F:ccasvsse001-almsivi.esm;000821:ccasvsse001-almsivi.esm;000820:ccasvsse001-almsivi.esm;000822:ccasvsse001-almsivi.esm;061CAB:Skyrim.esm",
         "Type": "HeavyArmor",
         "Armor": {
           "Nahkriin": {
@@ -3708,9 +3950,31 @@
   },
   "OtherHeavyArmors": {
     "Armor": {
+      "Ulfric's Armor": {
+        "MatchBehavior": "ModifyArmor",
+        "Identifiers": "Ulfric's;WAF_ArmorMatchingSetUlfric",
+        "Type": "HeavyArmor",
+        "Armor": {
+          "Armor": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 33.0,
+            "Weight": 25.0
+          },
+          "Boots": {
+            "Identifiers": "ArmorBoots",
+            "Rating": 12.0,
+            "Weight": 6.0
+          },
+          "Gauntlets": {
+            "Identifiers": "ArmorGauntlets",
+            "Rating": 12.0,
+            "Weight": 5.0
+          }
+        }
+      },
       "Morag Tong": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "DLC2ArmorMaterialMoragTong",
+        "Identifiers": "Morag Tong;DLC2ArmorMaterialMoragTong",
         "Type": "HeavyArmor",
         "Armor": {
           "Armor": {

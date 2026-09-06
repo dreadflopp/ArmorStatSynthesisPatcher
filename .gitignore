@@ -353,3 +353,9 @@ MigrationBackup/
 *.sln.iml
 
 ArmorStatSynthPatcher.zip
+ArmorStatSynthesisPatcher/WaccfArmorAuditExporter.cs
+waccf_armor_audit.json
+waccf_unmatched_armors.json
+Tools/Generate-WaccfSettings.ps1
+waccf_generic_armor_methodology.md
+waccf_rule_conflicts.json
