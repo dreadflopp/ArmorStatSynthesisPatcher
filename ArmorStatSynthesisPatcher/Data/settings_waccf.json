@@ -936,6 +936,49 @@
             "Weight": 2.0
           }
         }
+      },
+      "Light Steel": {
+        "Armor": {
+          "Shield": {
+            "Rating": 24.0,
+            "Weight": 5.0
+          }
+        }
+      },
+      "Steel Light Elven Armor": {
+        "Armor": {
+          "Armor": {
+            "Weight": 7.0
+          },
+          "Boots": {
+            "Weight": 4.0
+          },
+          "Gauntlets": {
+            "Weight": 3.0
+          },
+          "Helmet": {
+            "Weight": 3.0
+          }
+        }
+      },
+      "Elven Studded": {
+        "Armor": {
+          "Armor": {
+            "Weight": 9.0
+          },
+          "Heavy Armor": {
+            "Weight": 9.0
+          },
+          "Boots": {
+            "Weight": 5.0
+          },
+          "Gauntlets": {
+            "Weight": 4.0
+          },
+          "Helmet": {
+            "Weight": 4.0
+          }
+        }
       }
     }
   },
@@ -1686,11 +1729,5 @@
         }
       }
     }
-  },
-  "OtherHeavyArmors": {
-    "Armor": {}
-  },
-  "ClothingArmors": {
-    "Armor": {}
   }
 }

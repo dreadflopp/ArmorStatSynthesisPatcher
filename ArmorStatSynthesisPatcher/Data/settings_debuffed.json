@@ -19,12 +19,6 @@
       }
     }
   },
-  "DawnguardLightArmors": {
-    "Armor": {}
-  },
-  "DragonbornLightArmors": {
-    "Armor": {}
-  },
   "CreationClubLightArmors": {
     "Armor": {
       "Dwarven Mail": {
@@ -297,9 +291,6 @@
       }
     }
   },
-  "OtherLightArmors": {
-    "Armor": {}
-  },
   "VanillaHeavyArmors": {
     "Armor": {
       "Dwarven Plate": {
@@ -315,12 +306,6 @@
         }
       }
     }
-  },
-  "DawnguardHeavyArmors": {
-    "Armor": {}
-  },
-  "DragonbornHeavyArmors": {
-    "Armor": {}
   },
   "CreationClubHeavyArmors": {
     "Armor": {
@@ -605,11 +590,5 @@
         }
       }
     }
-  },
-  "OtherHeavyArmors": {
-    "Armor": {}
-  },
-  "ClothingArmors": {
-    "Armor": {}
   }
 }
