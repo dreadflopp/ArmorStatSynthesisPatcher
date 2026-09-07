@@ -1,7 +1,7 @@
 {
   "DebugMode": false,
   "PluginFilter": "IncludePlugins",
-  "PluginIncludeList": "Skyrim.esm;Dawnguard.esm;Dragonborn.esm;ccasvsse001-almsivi.esm;ccbgssse008-wraithguard.esl;ccbgssse021-lordsmail.esl;ccbgssse025-advdsgs.esm;ccbgssse041-netchleather.esl;ccbgssse050-ba_daedric.esl;ccbgssse051-ba_daedricmail.esl;ccbgssse052-ba_iron.esl;ccbgssse053-ba_leather.esl;ccbgssse054-ba_orcish.esl; ccbgssse055-ba_orcishscaled.esl;ccbgssse056-ba_silver.esl;ccbgssse057-ba_stalhrim.esl;ccbgssse058-ba_steel.esl;ccbgssse059-ba_dragonplate.esl;ccbgssse060-ba_dragonscale.esl;ccbgssse061-ba_dwarven.esl; ccbgssse062-ba_dwarvenmail.esl;ccbgssse063-ba_ebony.esl;ccbgssse064-ba_elven.esl;ccbgssse069-contest.esl;cccbhsse001-gaunt.esl;ccedhsse002-splkntset.esl;ccedhsse003-redguard.esl;ccffbsse001-imperialdragon.esl; cckrtsse001_altar.esl;ccmtysse001-knightsofthenine.esl;ccmtysse002-ve.esl;ccrmssse001-necrohouse.esl;cctwbsse001-puzzledungeon.esm;ccvsvsse003-necroarts.esl;Dwarfsphere.esp; Girl's Travel Outfit.esp;GVLT_LifeswornVestige.esp;Hothtrooper44_ArmorCompilation.esp;Kad_MoonMonkRobes.esp;KhajiitWillFollow.esp;Lollygagging Fashions.esp;Midwood Isle.esp; MoonAndStar_MAS.esp;moonpath.esp;PigIronSet.esl;RihadSwordsmanSet.esl;SaviorsHideStandalone.esp;Skyrim Extended Cut - Saints and Seducers.esp;_Fuse00_ArmorRaven.esp;[FB] Master Thief Armor.esp; [FB] Templar Assassin.esp;018Auri.esp;Ashe - Fire and Blood.esp;BSMBonemoldSet.esp;ForswornArmorVariantsFurMashup.esp;ForswornHeaddressVariants.esp;JS Armored Circlets SE.esp;BSHeartland.esm;BSAssets.esm;_Fuse00_ArmorKellan.esp;NW_Steel_Plate_Armors.esp;1Dwemer.esl;1FlutedArmor.esl;1FS.esl;1WR.esl;1SilverArmor.esl;1YsmirArmorSE.esl;Armors of the Velothi.esp;SMP_SpellKnightVariants.esp;_Fuse00_ArmorGorm.esp;Steel Light Elven Armor.esp;StuddedElvenArmor.esp;Chevalier's Armor Set.esp;Cyrodiilic Thief.esp;evgInfiltratorarmor.esp;NordicLeatherArmor.esp;Marauder Armor Expansion.esp;Northman - Armor Mashup.esp;Prvti_DragonCultWeapons.esp;FreehandArmor.esp;GVLT_LifeswornVestige.esp;Elite Wolf Armor.esp;_Fuse00_ArmorTravelingMageLArmor.esp;KvetchiMercenary.esl;DSQuestPack.esp;TheChoiceIsYours.esp;Aetherium Forge Destroys Items.esp;EastEmpireCompanyArmor.esp;Lore Weapon Expansion.esp;JK's Radiant Raiment.esp;DBDawnstar Sanctuary SSE.esp;MorthalBarrow.esp;DIS_NordScale.esp;WarmongerArmory_SSE.esp;QwibWanderingMercenaryOutfit.esp;Rogue Nord Armor.esp;Mercenary Light Iron Armor.esp;DIS_Armor_Compilation.esp;SkyforgeWeaponReplacer.esp;Mysteries of the Dwemer - Quest Mod.esp;It Came from Akavir.esp;Walks-Distant-Sands Quest Mod.esp;Creation Club Alternative Armors - Enchanted Variants and Integration.esp;SnowElvenArsenal.esp;CauseReducedCut.esp;CC Goblins Addon.esp;CWO - CC - CWChamps.esp;Bandit War.esp",
+  "PluginIncludeList": "Skyrim.esm;Dawnguard.esm;Dragonborn.esm;ccasvsse001-almsivi.esm;ccbgssse008-wraithguard.esl;ccbgssse021-lordsmail.esl;ccbgssse025-advdsgs.esm;ccbgssse041-netchleather.esl;ccbgssse050-ba_daedric.esl;ccbgssse051-ba_daedricmail.esl;ccbgssse052-ba_iron.esl;ccbgssse053-ba_leather.esl;ccbgssse054-ba_orcish.esl; ccbgssse055-ba_orcishscaled.esl;ccbgssse056-ba_silver.esl;ccbgssse057-ba_stalhrim.esl;ccbgssse058-ba_steel.esl;ccbgssse059-ba_dragonplate.esl;ccbgssse060-ba_dragonscale.esl;ccbgssse061-ba_dwarven.esl; ccbgssse062-ba_dwarvenmail.esl;ccbgssse063-ba_ebony.esl;ccbgssse064-ba_elven.esl;ccbgssse069-contest.esl;cccbhsse001-gaunt.esl;ccedhsse002-splkntset.esl;ccedhsse003-redguard.esl;ccffbsse001-imperialdragon.esl; cckrtsse001_altar.esl;ccmtysse001-knightsofthenine.esl;ccmtysse002-ve.esl;ccrmssse001-necrohouse.esl;cctwbsse001-puzzledungeon.esm;ccvsvsse003-necroarts.esl;Dwarfsphere.esp; Girl's Travel Outfit.esp;GVLT_LifeswornVestige.esp;Hothtrooper44_ArmorCompilation.esp;Kad_MoonMonkRobes.esp;KhajiitWillFollow.esp;Lollygagging Fashions.esp;Midwood Isle.esp; MoonAndStar_MAS.esp;moonpath.esp;PigIronSet.esl;RihadSwordsmanSet.esl;SaviorsHideStandalone.esp;Skyrim Extended Cut - Saints and Seducers.esp;_Fuse00_ArmorRaven.esp;[FB] Master Thief Armor.esp; [FB] Templar Assassin.esp;018Auri.esp;Ashe - Fire and Blood.esp;BSMBonemoldSet.esp;ForswornArmorVariantsFurMashup.esp;ForswornHeaddressVariants.esp;JS Armored Circlets SE.esp;BSHeartland.esm;BSAssets.esm;_Fuse00_ArmorKellan.esp;NW_Steel_Plate_Armors.esp;1Dwemer.esl;1FlutedArmor.esl;1FS.esl;1WR.esl;1SilverArmor.esl;1YsmirArmorSE.esl;Armors of the Velothi.esp;SMP_SpellKnightVariants.esp;_Fuse00_ArmorGorm.esp;Steel Light Elven Armor.esp;StuddedElvenArmor.esp;Chevalier's Armor Set.esp;Cyrodiilic Thief.esp;evgInfiltratorarmor.esp;NordicLeatherArmor.esp;Marauder Armor Expansion.esp;Northman - Armor Mashup.esp;Prvti_DragonCultWeapons.esp;FreehandArmor.esp;GVLT_LifeswornVestige.esp;Elite Wolf Armor.esp;_Fuse00_ArmorTravelingMageLArmor.esp;KvetchiMercenary.esl;DSQuestPack.esp;TheChoiceIsYours.esp;Aetherium Forge Destroys Items.esp;EastEmpireCompanyArmor.esp;Lore Weapon Expansion.esp;JK's Radiant Raiment.esp;DBDawnstar Sanctuary SSE.esp;MorthalBarrow.esp;DIS_NordScale.esp;WarmongerArmory_SSE.esp;QwibWanderingMercenaryOutfit.esp;Rogue Nord Armor.esp;Mercenary Light Iron Armor.esp;DIS_Armor_Compilation.esp;SkyforgeWeaponReplacer.esp;Mysteries of the Dwemer - Quest Mod.esp;It Came from Akavir.esp;Walks-Distant-Sands Quest Mod.esp;Creation Club Alternative Armors - Enchanted Variants and Integration.esp;SnowElvenArsenal.esp;CauseReducedCut.esp;CC Goblins Addon.esp;CWO - CC - CWChamps.esp;Bandit War.esp;Weapons Armor Clothing & Clutter Fixes.esp;Creation Club Integration - Anniversary Edition.esp",
   "PluginExcludeList": "",
   "IgnoredArmorFormKeys": "0C33BD:Skyrim.esm;0B8837:Skyrim.esm;015023:MoonAndStar_MAS.esp;000843:Helmet Toggle2.esp;03CF35:Dragonborn.esm;016EE3:Skyrim.esm;016EE5:Skyrim.esm;016EE6:Skyrim.esm;02003C:Skyrim.esm;02003E:Skyrim.esm;02003F:Skyrim.esm;020042:Skyrim.esm;020048:Skyrim.esm;020157:Skyrim.esm;020159:Skyrim.esm;02015A:Skyrim.esm;02015C:Skyrim.esm;02015E:Skyrim.esm;03636F:Skyrim.esm;03BC81:Skyrim.esm;03BC82:Skyrim.esm;03BC83:Skyrim.esm;03BC84:Skyrim.esm;04124A:Skyrim.esm;06A0A9:Skyrim.esm;06A0AB:Skyrim.esm;06A0AD:Skyrim.esm;06A0AF:Skyrim.esm;06A0B1:Skyrim.esm",
   "ModifyRatings": true,
@@ -88,12 +88,12 @@
             "Rating": 21.0,
             "Weight": 8.0
           },
-          "Fur Boots": {
+          "Boots": {
             "Identifiers": "ArmorBoots",
             "Rating": 5.0,
             "Weight": 2.0
           },
-          "Fur Gauntlets": {
+          "Gauntlets": {
             "Identifiers": "ArmorGauntlets",
             "Rating": 5.0,
             "Weight": 2.0
@@ -134,6 +134,11 @@
             "Identifiers": "ArmorHelmet",
             "Rating": 11.0,
             "Weight": 1.0
+          },
+          "Kilt": {
+            "Identifiers": "ArmorCuirass",
+            "Rating": 23.0,
+            "Weight": 6.0
           }
         }
       },
@@ -1243,7 +1248,7 @@
       },
       "Dark Seducer": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "ccBGSSSE025_ArmorMaterialDark",
+        "Identifiers": "ccBGSSSE025_ArmorMaterialDark;Dark Seducer",
         "Type": "LightArmor",
         "Armor": {
           "Armor": {
@@ -1644,7 +1649,7 @@
           "Torture's Hood": {
             "Identifiers": "0EE5C0:Skyrim.esm",
             "Rating": 13.0,
-            "Weight": 0.0
+            "Weight": 1.0
           },
           "Tsun's Armor": {
             "Identifiers": "0C0165:Skyrim.esm",
@@ -2566,7 +2571,7 @@
       },
       "Steel Plate": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "ArmorMaterialSteelPlate;IAKMaterialAdvancedPlate;DLC2dunKolbjornAhzidalItem",
+        "Identifiers": "ArmorMaterialSteelPlate;IAKMaterialAdvancedPlate",
         "Type": "HeavyArmor",
         "Armor": {
           "Armor": {
@@ -2862,7 +2867,7 @@
       },
       "Improved Bonemold": {
         "MatchBehavior": "ModifyArmor",
-        "Identifiers": "Improved Bonemold;Bonemold Armor Improved;Bonemold Shield Improved;WAF_DLC2ArmorMaterialBonemoldImproved",
+        "Identifiers": "Improved Bonemold;Bonemold Helmet Improved;Bonemold Gauntlets Improved;Bonemold Armor Improved;Bonemold Shield Improved;Bonemold Boots Improved;WAF_DLC2ArmorMaterialBonemoldImproved",
         "Type": "HeavyArmor",
         "Armor": {
           "Armor": {
@@ -3636,7 +3641,7 @@
     "Armor": {
       "Unique Heavy Armors": {
         "MatchBehavior": "Pass",
-        "Identifiers": "052794:Skyrim.esm;045F96:Skyrim.esm;0FC5BF:Skyrim.esm;0295F3:Skyrim.esm;0E41D8:Skyrim.esm;05CBFE:Skyrim.esm;03521F:Skyrim.esm;0D2846:Skyrim.esm;0DA750:Skyrim.esm;03399C:Dragonborn.esm;037B88:Dragonborn.esm;038ADD:Dragonborn.esm;15E949:ccasvsse001-almsivi.esm;06668E:ccasvsse001-almsivi.esm;000D63:ccbgssse008-wraithguard.esl;Lord's Mail;000867:ccbgssse059-ba_dragonplate.esl;000813:ccbgssse069-contest.esl;000899:cckrtsse001_altar.esl;000CDC:cckrtsse001_altar.esl;000D3D:ccrmssse001-necrohouse.esl;000893:cctwbsse001-puzzledungeon.esm;000886:ccvsvsse003-necroarts.esl;012E8A:Dawnguard.esm;00284D:Dawnguard.esm;005759:Dawnguard.esm;",
+        "Identifiers": "052794:Skyrim.esm;045F96:Skyrim.esm;0FC5BF:Skyrim.esm;0295F3:Skyrim.esm;0E41D8:Skyrim.esm;05CBFE:Skyrim.esm;03521F:Skyrim.esm;0D2846:Skyrim.esm;0DA750:Skyrim.esm;03399C:Dragonborn.esm;037B88:Dragonborn.esm;038ADD:Dragonborn.esm;15E949:ccasvsse001-almsivi.esm;06668E:ccasvsse001-almsivi.esm;000D63:ccbgssse008-wraithguard.esl;Lord's Mail;000867:ccbgssse059-ba_dragonplate.esl;000813:ccbgssse069-contest.esl;000899:cckrtsse001_altar.esl;000CDC:cckrtsse001_altar.esl;000D3D:ccrmssse001-necrohouse.esl;000893:cctwbsse001-puzzledungeon.esm;000886:ccvsvsse003-necroarts.esl;012E8A:Dawnguard.esm;00284D:Dawnguard.esm;005759:Dawnguard.esm;01DB98:Dragonborn.esm;",
         "Type": "HeavyArmor",
         "Armor": {
           "Ebony Mail": {
@@ -3768,6 +3773,11 @@
             "Identifiers": "005759:Dawnguard.esm",
             "Rating": 26.0,
             "Weight": 12.0
+          },
+          "Ahzidal's Helm of Vision": {
+            "Identifiers": "01DB98:Dragonborn.esm",
+            "Rating": 19.0,
+            "Weight": 6.0
           }
         }
       },

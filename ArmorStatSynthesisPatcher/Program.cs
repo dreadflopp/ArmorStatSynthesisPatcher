@@ -13,11 +13,6 @@ namespace ArmorStatSynthesisPatcher
     {
         private static Settings CurrentSettings = new Settings();
 
-        // Developer-only diagnostic switch. Keep this out of user settings/UI.
-        // When enabled, every matched armor's final rating and weight are raised
-        // by one so the record is emitted even when it already has desired stats.
-        private static bool DeveloperShiftMatchedArmorStatsByOne = false;
-
         private static void DebugLog(string message)
         {
             if (CurrentSettings.DebugMode)
@@ -508,11 +503,6 @@ namespace ArmorStatSynthesisPatcher
             LogInfo("Starting Armor Stats Synthesis Patcher");
             LogInfo("========================================");
 
-            if (DeveloperShiftMatchedArmorStatsByOne)
-            {
-                LogWarning("Developer stat shift is enabled: matched armor rating and weight will be increased by 1.");
-            }
-
             CurrentSettings = SettingsFileStore.Load(state.ExtraSettingsDataPath);
 
             // Check settings integrity before proceeding
@@ -556,10 +546,6 @@ namespace ArmorStatSynthesisPatcher
 
             // Create the armor matcher
             var matcher = new ArmorMatcher(CurrentSettings.GetAllLightArmors().Concat(CurrentSettings.GetAllHeavyArmors()).Concat(CurrentSettings.GetAllClothing()));
-
-            // TEMPORARY: Produce the WACCF/CC Integration armor audit used to
-            // design the WACCF settings preset.
-            WaccfArmorAuditExporter.Export(state, CurrentSettings, matcher);
 
             DebugLog("Plugin Include List:");
             foreach (var plugin in pluginIncludeList)
@@ -733,14 +719,6 @@ namespace ArmorStatSynthesisPatcher
 
                     bool modifyRating = CurrentSettings.ModifyRatings;
                     bool modifyWeight = CurrentSettings.ModifyWeights;
-                    if (DeveloperShiftMatchedArmorStatsByOne)
-                    {
-                        finalRating += 1f;
-                        finalWeight += 1f;
-                        modifyRating = true;
-                        modifyWeight = true;
-                        DebugLog($"  Developer shift applied: rating {finalRating}, weight {finalWeight}");
-                    }
 
                     // Check if we need to make any changes
                     bool needsChanges = false;
